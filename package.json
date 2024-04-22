@@ -11,15 +11,21 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "next": "14.2.2",
+    "prisma": "^5.12.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.75.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@prisma/client": "^5.12.1",
+    "@types/bun": "latest",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.2"
-  }
+    "eslint-config-next": "14.2.2",
+    "typescript": "^5"
+  },
+  "module": "index.ts",
+  "type": "module"
 }

@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# vva
+VVA (Voters Voice Ammendment) webpage
+
+## Code Stack
+- Next.js 14.2.2+
+<!-- - Sass 1.75.0+ -->
+- Postgres
+- Prisma 5.12.1+
+- Vercel host
+- Github https://github.com/maryann-doug-promo/doug-promo.git
+
+## Database
+- Database: mary_ann_doug
+- NOTE: The database for mary and doug are linked
+- SOOOOOOO
+- There will be no migrations here ... they are all in mary-promo
+
+```
+  Log on to postgres on the command line
+    psql postgres
+  List databases
+    \l
+  Choose database 'mary_ann_doug'
+    \c mary_ann_doug
+  List tables
+    \dt
+  List columns in table 'NAME'
+    \d NAME
+```
+
+```
+Creating dumps of the database - RUN ON COMMAND LINE!!!
+
+NEEDS TO BE CHANGED TO THE CORRECT VERCEL WHEN READY!!!
+
+
+
+https://nesin.io/blog/backup-restore-vercel-postgres-database
+  Dump so that it can be fully restored as is - use custom format - the below is for vercel
+    pg_dump -d postgresURL -Fc -f "vva_{DATE}.dmp"
+
+  I DON"T KNOW HOW THIS WORKS YET!!!
+  Restore the database from a custom formatted dump - for VERCEL. this should work but you would need to double check
+  Also you need to completely clean up the vercel database before doing this
+    FIGURE OUT AGAIN ON CHATGPT
+
+```
+
+```
+TO CREATE THE DB LOCALLY AND CHECK IT
+  -createdb -h localhost -p 5432 -U your_username new_database_name
+  -pg_restore -h localhost -p 5432 -U your_username -d new_database_name --verbose /path/to/your/dumpfile.dump
+```
+
+## Using Prisma as your ORM
+
+```
+  npx prisma init // First creates the prisma things you need to attach to database
+  npx prisma db pull // pull an already made database back into a schema in prisma
+  npx prisma studio // shows the database in a webpage so you can pick it apart
+  npx prisma generate  // MUST DO EVERY TIME YOU CHANGE THE DB
+
+  To update the database with Prisma
+  --update the schema manually
+  npx prisma format  // Formats the schema or something
+  IF IN DEV
+  npx prisma migrate dev --name {MIGRATION NAME YOU CHOOSE}    // to push schema to DEV
+  Review it --chat gpt said we should
+  IF IN PRODUCTION
+  npx prisma migrate dev --create-only
+  npx prisma migrate deploy
+
+  UPDATE THE CLIENT!
+  npx prisma generate
+  
+  push the schema to the DB
+  npx prisma db push
+
+
+
+  To initialize and use Prisma if you already have the schema but no interactions
+  npx prisma generate
+  -create a lib folder
+  -make a prisma.ts file
+    -Look at the prisma.ts file here as a guide
+
+
+    login db stuff on vercel
+  psql "postgres://default:FtumRq5VTk0N@ep-spring-night-a42es172-pooler.us-east-1.aws.neon.tech/verceldb?sslmode=require"
+
+```
+
+## Connect vercel and get .env
+
+```
+vercel logout
+vercel login
+  continue with github --- YOU MUST BE SIGNED IN TO THE GITHUB FOR votersvoiceamendment ON YOUR BROWSER!
+vercel link
+  do yes, yes, yes to link
+vercel env pull .env.local
+  Add this stuff to the .env file
+  
+```
+
+## Prerequisites
+- bun 1.0.25+
+
+## Install and use bun 1.0.25
+
+```
+curl -fsSL https://bun.sh/install | bash -s "bun-v1.0.25"
+
+-Follow the commands the terminal prints out
+```
+
+## Initialize Bun for the project
+```
+bun init
+```
+
+## Install Dependencies
+
+```
+bun install
+```
+
+## Run Dev Server
+
+```
+bun run dev
+```
+
+## Build Project
+
+```
+bun run build
+```
+
+## Start built project
+
+```
+bun start
+```
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+```
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Build a secret variable using the terminal
+```
+openssl rand -hex 32
+```
