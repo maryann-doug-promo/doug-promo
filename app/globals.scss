@@ -1,0 +1,59 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans;
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-padding-top: $header-height;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Global for defining the width of any container for the website based on media queries
+.containerFullPage {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  max-width: $page-max-width;
+  margin: 0 auto;
+
+  @media screen and (max-width: $large-width ) {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  @media screen and (max-width: $small-width ) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
+// TODO maybe put this in later
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+// }
