@@ -1,0 +1,34 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "url": "/",
+      "label": "Home",
+      "title": "Click to return to the Home page"
+    },
+    {
+      "id": "about",
+      "url": "/about",
+      "label": "About",
+      "title": "Click to go to the About page"
+    },
+    {
+      "id": "services",
+      "url": "/services",
+      "label": "Services",
+      "title": "Click to see the services offered"
+    },
+    {
+      "id": "reviews",
+      "url": "/reviews",
+      "label": "Reviews",
+      "title": "Click to see the Reviews"
+    },
+    {
+      "id": "contact",
+      "url": "/contact",
+      "label": "Contact",
+      "title": "Click to see how to Contact"
+    }
+  ]
+}

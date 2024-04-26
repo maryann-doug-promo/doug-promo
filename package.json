@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next lint && prisma generate --schema=./shared/prisma/schema.prisma && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "moment": "^2.30.1",
     "next": "14.2.2",
     "prisma": "^5.12.1",
     "react": "^18",

@@ -1,3 +1,5 @@
+"use server"
+
 import classNames from "classnames";
 
 // styles

@@ -1,0 +1,37 @@
+@import '../../../shared/variables.scss';
+
+.header {
+  /* For Safari */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* Ensure the header is above other content */
+  z-index: 10;
+  display: flex;
+  align-items: center;
+
+  // Add a specific height if h-header defines one
+  color: $header-font-color;
+  background-color: $header-color;
+  height: $header-height; // Example height, adjust as needed
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-size: 1rem;
+
+  width: 90%;
+
+  @media screen and (min-width: $small-width ) {
+    width: 80%
+  }
+
+  @media screen and (min-width: $large-width ) {
+    width: 70%;
+  }
+
+}

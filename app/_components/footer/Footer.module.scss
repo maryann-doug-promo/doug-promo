@@ -1,0 +1,52 @@
+@import '../../../shared/variables.scss';
+
+$text-size-mobile: 0.85rem;
+$text-size-desktop: 1.15rem;
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.copyrightIconContainer {
+  width: 0.75rem;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+
+  height: $footer-height;
+  background-color: $footer-color;
+  color: $footer-font-color;
+
+}
+
+.innerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.email {
+  color: $font-white;
+  font-size: $text-size-mobile;
+  padding: 0.5rem;
+
+  @media screen and (min-width: $medium-width) {
+    font-size: $text-size-desktop;
+  }
+}
+
+.text {
+  font-size: $text-size-mobile;
+
+  @media screen and (min-width: $medium-width) {
+    font-size: $text-size-desktop;
+  }
+}
