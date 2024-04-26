@@ -7,7 +7,9 @@ import { randomUUID } from "crypto";
 import { ReviewType } from "@/shared/types/review";
 
 // Get the environment variable that identifies the user
-const PROVIDER_ID = parseInt(process.env.PROVIDER_ID || '1', 10);
+// Make it equal a provider that could never exist if you 
+// forget to set the environmental variable
+const PROVIDER_ID = parseInt(process.env.PROVIDER_ID || '999', 10);
 
 // TODO YOU CAN REUSE THIS CODE SO MUCH!!! NEED TO FIGURE THAT OUT!!!!
 // YOU CAN REUSE THIS CODE SO MUCH!!! NEED TO FIGURE THAT OUT!!!!
@@ -79,6 +81,7 @@ export const getReview = async (approveToken: string): Promise<null | ReviewType
 
     const review = await prisma?.review.findUniqueOrThrow({
       where: {
+        provider_id: PROVIDER_ID,
         approve_token: approveToken
       }
     });
