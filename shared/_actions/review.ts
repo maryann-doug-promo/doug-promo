@@ -1,5 +1,7 @@
 "use server"
 
+import { revalidatePath } from "next/cache";
+
 // types
 import { ReviewType } from "@/shared/types/review";
 
@@ -62,6 +64,10 @@ export const approveReviewAction = async (prevState: any, formData: any) => {
     })
 
     await setApproval(review_id, approve);
+
+    // Revalidate the path for the reviews so
+    // this new one will show up without having to rebuild the project
+    revalidatePath(`/reviews`);
 
     return {
       message: `The review was marked as ${approve ? 'approved' : 'not approved'}.`,
