@@ -2,7 +2,9 @@
 import { ReviewType } from "@/shared/types/review";
 
 // content
-import content from '@/content/buildEmail.json';
+import content from '../content/buildEmail.json';
+
+// types
 import { ContactType } from "@/shared/types/contact";
 
 const HTML_THIS_WEBSITE = process.env.HTML_THIS_WEBSITE;

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Link from 'next/link';
 
 // content
-import content from '@/content/header.json';
+import content from '@/personal_content/header.json';
 
 // styles
 import styles from './Header.module.scss';

@@ -7,7 +7,7 @@ import { useFormState } from 'react-dom';
 import { InputType, TextAreaType } from '@/shared/types/formFields';
 
 // content
-import content from '@/content/contactForm.json';
+import content from '../../content/contactForm.json';
 
 // styles
 import styles from './ContactForm.module.scss';

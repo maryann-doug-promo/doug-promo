@@ -7,7 +7,7 @@ import { Card } from '@/shared/_layouts/card/Card';
 import { ReviewType } from '@/shared/types/review';
 
 // content
-import content from '@/content/review.json';
+import content from '../../content/review.json';
 
 // styles
 import styles from './Review.module.scss';

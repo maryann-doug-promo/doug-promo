@@ -5,7 +5,7 @@ import { useState } from 'react';
 // components
 import { LeaveReviewForm } from '../leaveReviewForm/LeaveReviewForm';
 
-import content from '@/content/leaveReview.json';
+import content from '../../content/leaveReview.json';
 
 // styles
 import styles from './LeaveReview.module.scss';

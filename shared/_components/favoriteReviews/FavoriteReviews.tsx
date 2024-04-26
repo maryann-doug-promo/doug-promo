@@ -13,7 +13,7 @@ import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 import { Review } from '../review/Review';
 
 // content
-import content from '@/content/favoriteReviews.json';
+import content from '../../content/favoriteReviews.json';
 
 // styles
 import styles from './FavoriteReviews.module.scss';

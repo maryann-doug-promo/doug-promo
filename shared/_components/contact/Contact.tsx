@@ -8,7 +8,7 @@ import { ContactForm } from '../contactForm/ContactForm';
 export const Contact = () => {
   return (
     <PageSection>
-      <h2>Book your Tailored Program Now!</h2>
+      <h2>Send a Request!</h2>
       <ContactForm
         page='contact'
       />

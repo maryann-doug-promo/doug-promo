@@ -6,8 +6,8 @@ import classNames from 'classnames';
 import { formatPhoneNumber } from '@/shared/lib/utils';
 
 // content
-import content from '@/content/footer.json';
-import personalInfo from '@/content/personal_info.json';
+import content from '@/personal_content/footer.json';
+import personalInfo from '@/personal_content/personal_info.json';
 
 // styles
 import styles from './Footer.module.scss';
