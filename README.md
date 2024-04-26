@@ -55,10 +55,18 @@ TO CREATE THE DB LOCALLY AND CHECK IT
 ## Using Prisma as your ORM
 
 ```
+  PRISMA in shared location
+    npx prisma generate --schema=./shared/prisma/schema.prisma
+
+
+  I THINK YOU ARE GOING TO NEED
+      --schema=./shared/prisma/schema.prisma
+  EVERYWHER!!!!!!
+
   npx prisma init // First creates the prisma things you need to attach to database
   npx prisma db pull // pull an already made database back into a schema in prisma
-  npx prisma studio // shows the database in a webpage so you can pick it apart
-  npx prisma generate  // MUST DO EVERY TIME YOU CHANGE THE DB
+  npx prisma studio --schema=./shared/prisma/schema.prisma // shows the database in a webpage so you can pick it apart
+  npx prisma generate --schema=./shared/prisma/schema.prisma // MUST DO EVERY TIME YOU CHANGE THE DB
 
   To update the database with Prisma
   --update the schema manually
