@@ -1,4 +1,5 @@
 
+import { unstable_noStore } from 'next/cache';
 
 // styles
 import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
@@ -9,6 +10,9 @@ import { Review } from '../review/Review';
 import { LeaveReview } from '../leaveReview/LeaveReview';
 
 export const Reviews = async () => {
+  // TODO once you get caching right you implement it
+  // TODO for now not enough time
+  unstable_noStore();
 
   const reviews = await getReviews();
 
