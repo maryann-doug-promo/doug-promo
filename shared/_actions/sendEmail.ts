@@ -76,7 +76,7 @@ export const sendReviewEmail = async (newReview: ReviewType) => {
 
 export const sendContactEmail = async (newContact: ContactType) => {
 
-  const subject = 'New Student Request';
+  const subject = process.env.NEW_REQUEST_EMAIL_SUBJECT || "New Request";
   const emailHtml = getContactEmail(newContact);
 
   sendEmail(subject, emailHtml);
