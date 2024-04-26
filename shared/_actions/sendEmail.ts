@@ -51,7 +51,7 @@ const sendEmail = (subject: string, html: string) => {
   transporter.sendMail(
     {
       to: TO_EMAIL_ADDRESS,
-      from: `"Tutoring Page" ${FROM_EMAIL_ADDRESS}`,
+      from: `"${process.env.EMAIL_FROM_NAME}" ${FROM_EMAIL_ADDRESS}`,
       subject: subject,
       html: html,
     },
