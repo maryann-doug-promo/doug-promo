@@ -38,10 +38,12 @@ export const getReviewEmail = (review: ReviewType) => {
 export const getContactEmail = (newContact: ContactType) => {
 
 
+  const newRequestWorder = process.env.EMAIL_NEW_REQUEST_WORDING || "A new request has been submitted.";
+
   const body = `<body>
     <div style={{ marginLeft: '20px', marginRight: '20px' }}>
-      <h3 style={{ marginBottom: '10px' }}>A new request for tutoring has been submitted.</h3>
-      <h4 style={{ marginBottom: '10px' }}>See below for their details</h4>
+      <h3 style={{ marginBottom: '10px' }}>${newRequestWorder}</h3>
+      <h4 style={{ marginBottom: '10px' }}>See below for their details.</h4>
       <div style={{ marginLeft: '10px' }}>
         <div style={{ marginBottom: '10px' }}>
           <span style={{ fontWeight: 'bold', marginRight: '5px' }}>
