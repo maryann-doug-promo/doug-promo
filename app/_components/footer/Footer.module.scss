@@ -1,4 +1,5 @@
-@import '../../../shared/variables.scss';
+@use '../../../shared/variables.scss' as general;
+@use '../../personal_variables.scss' as personal;
 
 $text-size-mobile: 0.85rem;
 $text-size-desktop: 1.15rem;
@@ -19,9 +20,9 @@ $text-size-desktop: 1.15rem;
   align-items: center;
 
 
-  height: $footer-height;
-  background-color: $footer-color;
-  color: $footer-font-color;
+  height: personal.$footer-height;
+  background-color: personal.$footer-color;
+  color: personal.$footer-font-color;
 
 }
 
@@ -34,11 +35,11 @@ $text-size-desktop: 1.15rem;
 }
 
 .email {
-  color: $font-white;
+  color: general.$font-white;
   font-size: $text-size-mobile;
   padding: 0.5rem;
 
-  @media screen and (min-width: $medium-width) {
+  @media screen and (min-width: general.$medium-width) {
     font-size: $text-size-desktop;
   }
 }
@@ -46,7 +47,7 @@ $text-size-desktop: 1.15rem;
 .text {
   font-size: $text-size-mobile;
 
-  @media screen and (min-width: $medium-width) {
+  @media screen and (min-width: general.$medium-width) {
     font-size: $text-size-desktop;
   }
 }
