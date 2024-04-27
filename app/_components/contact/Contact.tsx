@@ -21,11 +21,15 @@ export const Contact = () => {
     <PageSection>
       <SectionHeader title={content.title} />
       <div className={styles.contactOptions}>
-        <div>
+        <div className={styles.contactFormSection}>
           <h3 className={styles.formTitle}>{content.formTitle}</h3>
-          <ContactForm page="contact" />
+          <ContactForm
+            classNameFields={styles.formFields}
+            classNameSubmitButton={styles.formSubmitButton}
+            page="contact"
+          />
         </div>
-        <ContactInfo />
+        <ContactInfo className={styles.contactInfo} />
       </div>
     </PageSection>
   )

@@ -9,8 +9,12 @@ import content from '@/personal_content/contactInfo.json';
 // styles
 import styles from './ContactInfo.module.scss';
 
-export const ContactInfo = () => {
+interface ContactInfoProps {
+  className: string;
+}
+
+export const ContactInfo = ({ className }: ContactInfoProps) => {
   return (
-    <div>ContactInfo</div>
+    <div className={className}>ContactInfo</div>
   )
 }

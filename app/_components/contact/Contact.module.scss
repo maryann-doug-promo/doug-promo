@@ -2,7 +2,10 @@
 
 .contactOptions {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
+
+  width: 80%;
+  margin: 0 auto;
 }
 
 .formTitle {
@@ -10,5 +13,32 @@
   color: personal.$grey-four;
   margin-bottom: 0.5rem;
 
-  font-size: 1.35rem;
+  font-size: 1.5rem;
+}
+
+.formFields {
+  color: personal.$grey-four;
+  font-weight: bold;
+}
+
+.contactInfo {
+  flex: 1;
+}
+
+.contactFormSection {
+  flex: 1;
+}
+
+.formSubmitButton {
+  cursor: pointer;
+  background-color: personal.$grey-four !important;
+  border-radius: 1rem;
+
+  padding: 0.5rem 1rem;
+  color: white;
+
+  border: none;
+  font-size: 1rem;
+
+  text-transform: uppercase;
 }
