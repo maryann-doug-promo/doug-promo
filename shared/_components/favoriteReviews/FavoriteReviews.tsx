@@ -18,13 +18,19 @@ import content from '../../content/favoriteReviews.json';
 // styles
 import styles from './FavoriteReviews.module.scss';
 
-export const FavoriteReviews = async () => {
+interface FavoriteReviewsProps {
+  sectionTitle?: React.ReactNode;
+}
+
+export const FavoriteReviews = async ({ sectionTitle }: FavoriteReviewsProps) => {
 
   const favorites = await getFavoriteReviews();
 
   return (
     <PageSection>
-      <h2>{content.title}</h2>
+      {sectionTitle ?? (
+        <h2>{content.title}</h2>
+      )}
       <div className={styles.reviews}>
         {favorites.map((review: ReviewType, index: number) => {
           return (

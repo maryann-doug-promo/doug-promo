@@ -9,6 +9,10 @@ import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 import { Hero } from '../_components/hero/Hero';
 import { FavoriteService } from '../_components/favoriteService/FavoriteService';
 import { PastProject } from '../_components/PastProject/PastProject';
+import { SectionHeader } from '../_components/sectionHeader/SectionHeader';
+
+// shared components
+import { FavoriteReviews } from '@/shared/_components/favoriteReviews/FavoriteReviews';
 
 // content
 import homePageContent from '@/personal_content/homePage.json';
@@ -53,6 +57,13 @@ export default function HomePage() {
             )
           })
         }
+      />
+      <FavoriteReviews
+        sectionTitle={(
+          <SectionHeader
+            title={homePageContent.favoriteReviews.title}
+          />
+        )}
       />
     </MainFullPage>
   );

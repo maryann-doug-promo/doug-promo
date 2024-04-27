@@ -10,5 +10,8 @@
       "href": "/contact",
       "label": "Get a Quote"
     }
+  },
+  "favoriteReviews": {
+    "title": "Reviews From Trusted Neighbors"
   }
 }
