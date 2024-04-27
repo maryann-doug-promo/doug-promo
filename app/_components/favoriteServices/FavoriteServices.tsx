@@ -4,7 +4,7 @@
 import { FavoriteServiceType } from '@/personal_types/service';
 
 // layouts
-import { CardsSection } from '@/app/_layouts/cardSection/CardSection';
+import { CardsSection } from '@/app/_layouts/cardsSection/CardsSection';
 
 // components
 import { FavoriteService } from '../favoriteService/FavoriteService';

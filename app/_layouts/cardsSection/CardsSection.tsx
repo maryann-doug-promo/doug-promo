@@ -9,7 +9,7 @@ import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 import { SectionHeader } from '@/app/_components/sectionHeader/SectionHeader';
 
 // styles
-import styles from './CardSection.module.scss';
+import styles from './CardsSection.module.scss';
 
 
 interface CardsSectionProps {

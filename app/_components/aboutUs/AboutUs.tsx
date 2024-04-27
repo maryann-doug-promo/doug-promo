@@ -1,7 +1,7 @@
 
 
 // layouts
-import { CardsSection } from '@/app/_layouts/cardSection/CardSection';
+import { CardsSection } from '@/app/_layouts/cardsSection/CardsSection';
 import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 
 // styles
