@@ -1,23 +1,57 @@
+"use client"
 
-// layouts
-import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
+import classNames from 'classnames';
 
-// components
-import { SectionHeader } from '../sectionHeader/SectionHeader';
-
-// content
-import content from '@/personal_content/faq.json';
-
+import { useState } from 'react';
 // styles
 import styles from './FAQ.module.scss';
+import { Icon } from '../icon/Icon';
 
-export const FAQ = () => {
+interface FaqDropDownProps {
+  question: string;
+  answer: string;
+}
+
+export const FAQ = ({ question, answer }: FaqDropDownProps) => {
+
+  const [showAnswer, setShowAnswer] = useState(false);
+
   return (
-    <PageSection>
-      <SectionHeader
-        title={content.title}
-        subTitle={content.subTitle}
-      />
-    </PageSection>
+    <div className={styles.dropdown}>
+      <div
+        className={styles.dropDownQuestion}
+        onClick={() => {
+          setShowAnswer(!showAnswer);
+        }}
+      >
+        <span>{question}</span>
+        <div className={styles.arrowContainer}>
+
+          {showAnswer ? (
+            <Icon
+              id="upArrow"
+              alt="Close drop down"
+              tooltip="Close drop down"
+            />
+          ) : (
+            <Icon
+              id="downArrow"
+              alt="Open drop down"
+              tooltip="Open drop down"
+            />
+          )}
+        </div>
+      </div>
+      <div
+        className={
+          classNames(
+            styles.dropDownAnswer,
+            !showAnswer ? styles.hideAnswer : undefined
+          )
+        }
+      >
+        <p>{answer}</p>
+      </div>
+    </div>
   )
 }

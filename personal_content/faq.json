@@ -1,4 +1,22 @@
 {
   "title": "Frequently Asked Questions",
-  "subTitle": "Please contact us if you cannot find an answer to your question."
+  "subTitle": "Please contact us if you cannot find an answer to your question.",
+  "faqs": [
+    {
+      "question": "Can you bill my home insurance?",
+      "answer": "We cannot bill your insurance, but we will provide all the documentation that you need to file for reimbursement. "
+    },
+    {
+      "question": "What is included with your free repair estimate?",
+      "answer": "All of our estimates include a fully detailed scope of the work to be completed. You will receive a written report with a breakdown of the cost and time estimated for your project."
+    },
+    {
+      "question": "How will you handle the scheduling of your work orders?",
+      "answer": "We communicate with you every step of the way. If we can see that we will not have the work completed by the agreed-upon time, we will reach out to get a new completion date."
+    },
+    {
+      "question": "Are you licensed and insured?",
+      "answer": "Yes! We have all proper licensing and insurance. We would be more than happy to provide further information if requested. "
+    }
+  ]
 }

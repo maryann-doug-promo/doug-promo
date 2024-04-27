@@ -7,11 +7,17 @@ import styles from './Icon.module.scss';
 import starIcon from '@/public/assets/icons/star.svg';
 import closeIcon from '@/public/assets/icons/close_x.svg';
 import whiteCopyrightIcon from '@/public/assets/icons/white-copyright.svg';
+import upArrowIcon from '@/public/assets/icons/upArrow.svg';
+import downArrowIcon from '@/public/assets/icons/downArrow.svg';
+
+
 
 const icons: Record<string, StaticImageData> = {
   start: starIcon,
   close: closeIcon,
-  copyright: whiteCopyrightIcon
+  copyright: whiteCopyrightIcon,
+  upArrow: upArrowIcon,
+  downArrow: downArrowIcon
 };
 
 interface IconProps {

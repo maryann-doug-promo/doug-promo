@@ -1,0 +1,31 @@
+@use '../../personal_variables.scss' as personal;
+
+.arrowContainer {
+  width: 1rem;
+}
+
+.dropdown {
+  border-bottom: 1px solid personal.$grey-four;
+
+}
+
+.dropDownQuestion {
+  cursor: pointer;
+  padding: 1rem 0rem;
+
+  font-size: 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropDownAnswer {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+
+  color: personal.$grey-five;
+}
+
+.hideAnswer {
+  display: none;
+}
