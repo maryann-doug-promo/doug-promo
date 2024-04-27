@@ -1,7 +1,7 @@
 "use server"
 
 // components
-import { PagesNav } from '../../../shared/_components/navPages/NavPages';
+import { NavPages } from '../../../shared/_components/navPages/NavPages';
 
 // content
 import content from '@/personal_content/header.json';
@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.companyName}>{personal_info.company_name}</h1>
-      <PagesNav
+      <NavPages
         pages={content.pages}
         placeCalling='header'
       />

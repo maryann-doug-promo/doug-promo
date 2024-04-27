@@ -10,12 +10,12 @@ import { HeaderLink } from '../linkPage/LinkPage'
 // styles
 import styles from './NavPages.module.scss';
 
-interface PagesNavProps {
+interface NavPagesProps {
   pages: PageLinkType[];
   placeCalling: string;
 }
 
-export const PagesNav = ({ pages, placeCalling }: PagesNavProps) => {
+export const NavPages = ({ pages, placeCalling }: NavPagesProps) => {
   return (
     <nav className={classNames(styles.nav, 'containerFullPage')}>
       {pages.map((page: PageLinkType) => {
