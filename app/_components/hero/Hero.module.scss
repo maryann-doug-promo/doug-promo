@@ -1,0 +1,78 @@
+@use '../../personal_variables.scss' as personal;
+@use '../../../shared/variables.scss' as general;
+
+
+.callToActionButton {
+  background-color: personal.$grey-one;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 3rem;
+
+  padding: 1rem;
+
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0.5rem;
+
+  width: 90%;
+
+  @media screen and (min-width: general.$xs-width ) {
+    width: 85%;
+  }
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 55%;
+  }
+
+  @media screen and (min-width: general.$large-width ) {
+    width: 45%;
+  }
+}
+
+.headlines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  text-align: center;
+  width: 90%;
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 75%;
+  }
+}
+
+.innerStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 25rem;
+}
+
+.subheadline {
+  text-align: center;
+  margin-top: 2rem;
+
+  width: 90%;
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 75%;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: personal.$grey-five;
+}

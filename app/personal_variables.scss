@@ -1,7 +1,12 @@
+// grey color
+$grey-one: #E1E3DE;
+$grey-five: #74786C;
+
 // header
 $header-height: 8rem;
-$header-color: #F0F0F0;
-$header-font-color: #74786C;
+// $header-color: #F0F0F0;
+$header-color: white;
+$header-font-color: $grey-five;
 
 // footer
 $footer-height: 10rem;

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Your Neighborhood Handyman, LLC",
+    "headlines": [
+      "Licensed and Insured",
+      "handyman servicing",
+      "New Kent & surrounding areas"
+    ],
+    "callToActionButton": {
+      "href": "/contact",
+      "label": "Get a Quote"
+    }
+  }
+}
