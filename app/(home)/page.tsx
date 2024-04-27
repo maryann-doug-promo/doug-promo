@@ -4,6 +4,7 @@ import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
 import { Hero } from '../_components/hero/Hero';
+import { FavoriteServices } from '../_components/favoriteServices/FavoriteServices';
 
 // content
 import content from '@/personal_content/homePage.json'
@@ -18,6 +19,7 @@ export default function HomePage() {
         classNameBackground={styles.heroBackground}
         content={content.hero}
       />
+      <FavoriteServices />
     </MainFullPage>
   );
 }

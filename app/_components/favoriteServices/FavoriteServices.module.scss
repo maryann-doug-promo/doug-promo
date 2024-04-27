@@ -1,0 +1,7 @@
+@use '../../personal_variables.scss' as personal;
+
+.favorites {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
