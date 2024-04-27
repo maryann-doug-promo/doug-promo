@@ -1,5 +1,7 @@
 "use server"
 
+import classNames from 'classnames';
+
 // layouts
 import { Card } from '@/shared/_layouts/card/Card';
 
@@ -7,13 +9,14 @@ import { Card } from '@/shared/_layouts/card/Card';
 import styles from './GeneralCard.module.scss';
 
 interface GeneralCardProps {
-  title: string;
+  cardClassName?: string;
   description: string;
+  title: string;
 }
 
-export const GeneralCard = ({ title, description }: GeneralCardProps) => {
+export const GeneralCard = ({ title, description, cardClassName }: GeneralCardProps) => {
   return (
-    <Card className={styles.generalCard}>
+    <Card className={classNames(styles.generalCard, cardClassName)}>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
     </Card>
