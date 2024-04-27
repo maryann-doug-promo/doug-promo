@@ -1,3 +1,4 @@
+@use '../../../shared/variables.scss' as general;
 @use '../../personal_variables.scss' as personal;
 
 .contactOptions {
@@ -6,6 +7,12 @@
 
   width: 80%;
   margin: 0 auto;
+
+  flex-direction: column;
+
+  @media screen and (min-width: general.$small-width ) {
+    flex-direction: row;
+  }
 }
 
 .formTitle {

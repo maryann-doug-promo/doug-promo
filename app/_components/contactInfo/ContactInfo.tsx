@@ -36,12 +36,14 @@ export const ContactInfo = ({ className }: ContactInfoProps) => {
         <h3 className={styles.h3}>{formatPhoneNumber(personalInfo.phone_number)}</h3>
       </div>
       <div>
-        <h5>{content.serviceAreas.title}</h5>
-        {content.serviceAreas.areas.map((area: string, index) => {
-          return (
-            <p key={`contact_contactInfo_serviceArea_${index}`}>{area}</p>
-          )
-        })}
+        <h5 className={styles.h5}>{content.serviceAreas.title}</h5>
+        <div className={styles.areas}>
+          {content.serviceAreas.areas.map((area: string, index) => {
+            return (
+              <p key={`contact_contactInfo_serviceArea_${index}`}>{area}</p>
+            )
+          })}
+        </div>
       </div>
     </div>
   )
