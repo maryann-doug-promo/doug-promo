@@ -1,5 +1,7 @@
 "use client"
 
+import classNames from 'classnames';
+
 import { useState } from 'react';
 
 // components
@@ -11,7 +13,12 @@ import content from '../../content/leaveReview.json';
 import styles from './LeaveReview.module.scss';
 import { SplashScreen } from '@/shared/_layouts/splashScreen/SplashScreen';
 
-export const LeaveReview = () => {
+interface LeaveReviewProps {
+  classNameButton?: string;
+  buttonText?: string;
+}
+
+export const LeaveReview = ({ classNameButton, buttonText }: LeaveReviewProps) => {
 
   const [leaveNewReview, setLeaveNewReview] = useState(false);
 
@@ -32,12 +39,12 @@ export const LeaveReview = () => {
         </SplashScreen>
       ) : (
         <button
-          className={styles.writeReviewButton}
+          className={classNames(styles.writeReviewButton, classNameButton)}
           onClick={() => {
             setLeaveNewReview(true)
           }}
         >
-          {content.buttonText}
+          {buttonText ?? content.buttonText}
         </button>
       )}
     </>
