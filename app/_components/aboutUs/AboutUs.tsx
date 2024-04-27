@@ -17,6 +17,7 @@ export const AboutUs = () => {
       <CardsSection
         title={content.title}
         classNameCards={styles.cards}
+        classNameTitle={styles.title}
         cards={
           content.qualifications.map((qualification, index: number) => {
             return (

@@ -16,13 +16,15 @@ interface CardsSectionProps {
   title: string;
   cards: React.ReactNode[];
   classNameCards?: string;
+  classNameTitle?: string;
 }
 
-export const CardsSection = ({ title, cards, classNameCards }: CardsSectionProps) => {
+export const CardsSection = ({ title, cards, classNameCards, classNameTitle }: CardsSectionProps) => {
   return (
     <PageSection>
       <SectionHeader
         title={title}
+        classNameTitle={classNameTitle}
       />
       <div className={classNames(styles.cards, classNameCards)}>
         {cards}
