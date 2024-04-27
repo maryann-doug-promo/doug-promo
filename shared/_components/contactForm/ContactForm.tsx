@@ -1,5 +1,6 @@
 "use client"
 
+import classNames from 'classnames';
 import { useEffect, useRef, useState } from 'react';
 import { useFormState } from 'react-dom';
 
@@ -74,9 +75,11 @@ const InputField = ({ page, input }: InputFieldProps) => {
 
 interface ContactFormProps {
   page: string;
+  classNameFields?: string;
+  classNameSubmitButton?: string;
 }
 
-export const ContactForm = ({ page }: ContactFormProps) => {
+export const ContactForm = ({ page, classNameFields, classNameSubmitButton }: ContactFormProps) => {
 
   const [contactState, contact] = useFormState(contactAction, initialState);
   const [showMessage, setShowMessage] = useState<boolean>(false);
@@ -107,8 +110,7 @@ export const ContactForm = ({ page }: ContactFormProps) => {
       action={contact}
       ref={formRef}
     >
-      <div>
-
+      <div className={classNames(styles.contactFormFields, classNameFields)}>
         {content.inputs.map((input: InputType) => {
           return (
             <InputField
@@ -143,6 +145,7 @@ export const ContactForm = ({ page }: ContactFormProps) => {
           )
         })}
         <SubmitFormButton
+          className={classNameSubmitButton}
           text={content.submitButton.text}
         />
       </div>
