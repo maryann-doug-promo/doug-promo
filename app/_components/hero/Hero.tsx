@@ -13,7 +13,7 @@ interface HeroProps {
   classNameBackground: string;
   content: {
     title: string;
-    headlines: string[];
+    headlines?: string[];
     subheadline?: string;
     callToActionButton: {
       href: string;
@@ -31,15 +31,17 @@ export const Hero = ({ classNameBackground, content }: HeroProps) => {
     <PageSection background={classNameBackground} innerStyle={styles.innerStyle}>
       <div className={styles.content}>
         <h1 className={styles.title}>{content.title}</h1>
-        <div className={styles.headlines}>
-          {content.headlines.map((headline: string, index: number) => {
-            return (
-              <h2 key={`hero_headline_${index}`} className={styles.headline}>
-                {headline}
-              </h2>
-            );
-          })}
-        </div>
+        {content.headlines && (
+          <div className={styles.headlines}>
+            {content.headlines.map((headline: string, index: number) => {
+              return (
+                <h2 key={`hero_headline_${index}`} className={styles.headline}>
+                  {headline}
+                </h2>
+              );
+            })}
+          </div>
+        )}
         {content.subheadline && (
           <h3 className={styles.subheadline}>
             {content.subheadline}
