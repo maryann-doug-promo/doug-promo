@@ -2,33 +2,33 @@
   "pages": [
     {
       "id": "home",
-      "url": "/",
+      "href": "/",
       "label": "Home",
-      "title": "Click to return to the Home page"
+      "tooltip": "Click to return to the Home page"
     },
     {
       "id": "about",
-      "url": "/about",
+      "href": "/about",
       "label": "About",
-      "title": "Click to go to the About page"
+      "tooltip": "Click to go to the About page"
     },
     {
       "id": "services",
-      "url": "/services",
+      "href": "/services",
       "label": "Services",
-      "title": "Click to see the services offered"
+      "tooltip": "Click to see the services offered"
     },
     {
       "id": "reviews",
-      "url": "/reviews",
+      "href": "/reviews",
       "label": "Reviews",
-      "title": "Click to see the Reviews"
+      "tooltip": "Click to see the Reviews"
     },
     {
       "id": "contact",
-      "url": "/contact",
+      "href": "/contact",
       "label": "Contact",
-      "title": "Click to see how to Contact"
+      "tooltip": "Click to see how to Contact"
     }
   ]
 }

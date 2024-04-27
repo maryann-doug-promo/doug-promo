@@ -25,22 +25,3 @@
   font-size: 1.5rem;
 
 }
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  font-size: 1.25rem;
-
-  width: 90%;
-
-  @media screen and (min-width: general.$small-width ) {
-    width: 80%
-  }
-
-  @media screen and (min-width: general.$large-width ) {
-    width: 70%;
-  }
-
-}

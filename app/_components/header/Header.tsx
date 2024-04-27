@@ -1,7 +1,7 @@
 "use server"
 
-import classNames from 'classnames';
-import Link from 'next/link';
+// components
+import { PagesNav } from '../../../shared/_components/navPages/NavPages';
 
 // content
 import content from '@/personal_content/header.json';
@@ -14,19 +14,10 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.companyName}>{personal_info.company_name}</h1>
-      <nav className={classNames(styles.nav, 'containerFullPage')}>
-        {content.pages.map((page) => {
-          return (
-            <Link
-              key={`header_nav_${page.id}`}
-              href={page.url}
-              title={page.title}
-            >
-              {page.label}
-            </Link>
-          );
-        })}
-      </nav>
+      <PagesNav
+        pages={content.pages}
+        placeCalling='header'
+      />
     </header >
   )
 }
