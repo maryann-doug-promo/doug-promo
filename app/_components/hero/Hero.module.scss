@@ -3,10 +3,10 @@
 
 
 .callToActionButton {
-  background-color: personal.$grey-one;
+  background-color: personal.$grey-four !important;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  color: black;
+  color: white;
 }
 
 .content {
@@ -15,7 +15,6 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
-  margin-top: 3rem;
 
   padding: 1rem;
 
@@ -41,21 +40,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.25rem;
 }
 
 .headline {
   text-align: center;
-  width: 90%;
-
-  @media screen and (min-width: general.$small-width ) {
-    width: 75%;
-  }
 }
 
 .innerStyle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   min-height: 25rem;
 }

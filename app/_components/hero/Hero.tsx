@@ -10,7 +10,7 @@ import styles from './Hero.module.scss';
 
 
 interface HeroProps {
-  classNameBackground: string;
+  classNameBackground?: string;
   content: {
     title: string;
     headlines?: string[];
