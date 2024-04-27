@@ -17,7 +17,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={classNames(styles.innerFooter, 'containerFullPage')}>
-        <h3>{content.company}</h3>
+        <h3>{`${personalInfo.company_name}, ${personalInfo.slogan}`}</h3>
         <h3>{personalInfo.address}</h3>
         <h4>{formatPhoneNumber(personalInfo.phone_number)}</h4>
         <div className={styles.copyright}>
