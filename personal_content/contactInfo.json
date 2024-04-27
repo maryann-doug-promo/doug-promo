@@ -1,1 +1,16 @@
-{}
+{
+  "twentFourHours": "24 Hour Emergency Service Available",
+  "instructions": [
+    "We stay in constant communication with our customers until the job is done. ",
+    "For minor repairs and fixes, please fill out the service/quote request form and submit it with any photos.",
+    "For emergency service, please contact us by phone."
+  ],
+  "serviceAreas": {
+    "title": "We Service The Following Areas:",
+    "areas": [
+      "New Kent",
+      "Henrico",
+      "Hanover"
+    ]
+  }
+}

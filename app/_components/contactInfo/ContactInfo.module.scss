@@ -1,0 +1,19 @@
+@use '../../personal_variables.scss' as personal;
+
+.contactInfo {
+  color: personal.$grey-four;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h3 {
+  font-size: 1.85rem;
+  font-weight: normal;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
