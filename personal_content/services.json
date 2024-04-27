@@ -1,4 +1,5 @@
 {
+  "title": "Turn Your \"Honey Do\" List into a \"Honey Done\" List!",
   "favorites": [
     {
       "title": "Construction & Installation",
@@ -11,6 +12,44 @@
     {
       "title": "Maintenance & Home Services",
       "description": "Don't risk further damage to your home by letting maintenance fall by the wayside. Let us save you time take care of your honey-do list! "
+    }
+  ],
+  "normal": [
+    {
+      "title": "",
+      "description": "Hang ceiling fans, change ceiling light fixtures - especially pantry, laundry room, and closets"
+    },
+    {
+      "title": "",
+      "description": "Hang blinds & curtains, install Plantation Shutters, take down or hang pictures or other decorations, install wall mount TV’s "
+    },
+    {
+      "title": "",
+      "description": "Assemble furniture (including picking up boxed items at the store); shelving installation and shelf assembly"
+    },
+    {
+      "title": "",
+      "description": "Power washing house, deck, sidewalk, porch, patio, driveway, and fences; stain/re-stain decks and fences; seal/reseal driveways; driveway edge pavers installed"
+    },
+    {
+      "title": "",
+      "description": "Deck and fence maintenance and repair; Pergola and Gazebo installation, maintenance, upgrades, and repair"
+    },
+    {
+      "title": "",
+      "description": "Replace and repair toilets, sinks, faucets; repair/replace garbage disposals."
+    },
+    {
+      "title": "",
+      "description": "Replace and repair toilets, sinks, faucets; repair/replace garbage disposals."
+    },
+    {
+      "title": "",
+      "description": "Replace batteries in smoke and carbon monoxide detectors; replace defective smoke and carbon monoxide detectors; install new smoke and carbon monoxide detector"
+    },
+    {
+      "title": "",
+      "description": "Dryer vent cleaning"
     }
   ]
 }
