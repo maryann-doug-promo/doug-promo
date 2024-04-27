@@ -1,0 +1,14 @@
+@use '../../personal_variables.scss' as personal;
+
+.contactOptions {
+  display: flex;
+  gap: 1rem;
+}
+
+.formTitle {
+  text-transform: uppercase;
+  color: personal.$grey-four;
+  margin-bottom: 0.5rem;
+
+  font-size: 1.35rem;
+}

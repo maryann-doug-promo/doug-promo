@@ -1,9 +1,11 @@
 // layouts
 import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
+// components
+import { Contact } from '../_components/contact/Contact';
+
 // styles
 import styles from './page.module.scss';
-import { Contact } from '@/shared/_components/contact/Contact';
 
 export default function ContactPage() {
   return (
