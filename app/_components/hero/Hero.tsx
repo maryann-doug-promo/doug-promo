@@ -15,15 +15,16 @@ interface HeroProps {
     title: string;
     headlines?: string[];
     subheadline?: string;
-    callToActionButton: {
+    callToActionButton?: {
       href: string;
       label: string;
     };
     photoCredit?: string;
-  }
+  },
+  callToAction?: React.ReactNode;
 }
 
-export const Hero = ({ classNameBackground, content }: HeroProps) => {
+export const Hero = ({ classNameBackground, content, callToAction }: HeroProps) => {
 
   const photoCredit: null | string = content.photoCredit ?? null;
 
@@ -47,10 +48,16 @@ export const Hero = ({ classNameBackground, content }: HeroProps) => {
             {content.subheadline}
           </h3>
         )}
-        <LinkButton
-          className={styles.callToActionButton}
-          content={content.callToActionButton}
-        />
+        {callToAction ? (
+          callToAction
+        ) : (
+          content.callToActionButton && (
+            <LinkButton
+              className={styles.callToActionButton}
+              content={content.callToActionButton}
+            />
+          )
+        )}
       </div>
       {content.photoCredit && (
         <p className={styles.photoCredit}>{content.photoCredit}</p>

@@ -1,0 +1,23 @@
+@use '../personal_variables.scss' as personal;
+
+.heroBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: url('/assets/desk.jpg');
+}
+
+.heroLeaveReviewButton {
+  cursor: pointer;
+  background-color: personal.$grey-four !important;
+  border-radius: 1rem;
+
+  padding: 0.5rem 1rem;
+  color: white;
+
+  border: none;
+  font-size: 1rem;
+
+  text-transform: uppercase;
+}
