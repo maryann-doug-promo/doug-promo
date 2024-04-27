@@ -18,8 +18,6 @@ export const Reviews = async () => {
 
   return (
     <PageSection>
-      <h1>Reviews</h1>
-      <LeaveReview />
       <div className={styles.reviews}>
         {reviews.map((review: ReviewType, index: number) => {
           return (
