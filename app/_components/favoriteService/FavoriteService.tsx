@@ -15,7 +15,7 @@ interface FavoriteServiceProps {
 
 export const FavoriteService = ({ service }: FavoriteServiceProps) => {
   return (
-    <Card>
+    <Card className={styles.favoriteService}>
       <h3 className={styles.title}>{service.title}</h3>
       <p className={styles.description}>{service.description}</p>
     </Card>
