@@ -31,7 +31,7 @@ export default function ReviewsPage() {
       <Reviews
         isFavorites={false}
         sectionTitle={null}
-        classNameCard={"reviewCardBorders"}
+        classNameCard={"cardBorders"}
       />
     </MainFullPage>
   );

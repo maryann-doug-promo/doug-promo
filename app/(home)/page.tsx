@@ -30,7 +30,7 @@ export default function HomePage() {
       <PastProjects />
       {/* The Reviews are for the favorite reviews */}
       <Reviews
-        classNameCard={"reviewCardBorders"}
+        classNameCard={"cardBorders"}
         isFavorites={true}
         sectionTitle={(
           <SectionHeader
