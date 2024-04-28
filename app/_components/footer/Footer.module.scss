@@ -9,20 +9,16 @@ $text-size-desktop: 1.15rem;
   display: flex;
   align-items: center;
 
-
   height: personal.$footer-height;
   background-color: personal.$footer-color;
   color: personal.$footer-font-color;
 
-
   font-size: $text-size-mobile;
-
   text-align: center;
 
   @media screen and (min-width: general.$small-width ) {
     font-size: $text-size-desktop;
   }
-
 }
 
 .sloganAddress {

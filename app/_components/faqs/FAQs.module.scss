@@ -1,11 +1,13 @@
+@use '../../../shared/variables.scss' as general;
+
 .faqs {
-
-  margin-top: 2rem;
-
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  width: 70%;
-  margin: 0 auto;
+  @media screen and (min-width: general.$small-width ) {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
 }

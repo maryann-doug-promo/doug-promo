@@ -1,7 +1,12 @@
+@use '../../../shared/variables.scss' as general;
 @use '../../personal_variables.scss' as personal;
 
 .arrowContainer {
-  width: 1rem;
+  width: 0.75rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 1rem;
+  }
 }
 
 .dropdown {
@@ -12,18 +17,25 @@
 .dropDownQuestion {
   cursor: pointer;
   padding: 1rem 0rem;
-
-  font-size: 1.25rem;
-
   display: flex;
   justify-content: space-between;
+
+  font-size: 1rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    font-size: 1.25rem;
+  }
 }
 
 .dropDownAnswer {
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-
   color: personal.$secondary-color;
+
+  font-size: 0.9rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    font-size: 1.1rem;
+  }
 }
 
 .hideAnswer {

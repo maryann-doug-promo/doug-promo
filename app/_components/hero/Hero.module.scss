@@ -69,6 +69,17 @@
 
 .title {
   text-align: center;
-  font-size: 2.5rem;
   color: personal.$secondary-color;
+
+  font-size: 2rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 75%;
+    font-size: 2.25rem;
+  }
+
+  @media screen and (min-width: general.$large-width ) {
+    width: 75%;
+    font-size: 2.5rem;
+  }
 }
