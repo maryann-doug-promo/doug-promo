@@ -23,7 +23,6 @@ export const AboutUs = () => {
             return (
               <GeneralCard
                 key={`aboutUs_qualification_${index}`}
-                cardClassName={styles.qualification}
                 title={qualification.title}
                 description={qualification.description}
               />
