@@ -1,7 +1,17 @@
+@use '../personal_variables.scss' as personal;
+
 .heroBackground {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   background-image: url('/assets/desk.jpg');
+}
+
+.heroTitle {
+  color: personal.$secondary-color;
+}
+
+.heroButton {
+  background-color: personal.$primary-color;
 }

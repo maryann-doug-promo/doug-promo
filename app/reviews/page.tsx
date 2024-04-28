@@ -2,7 +2,7 @@
 import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
-import { Hero } from '../_components/hero/Hero';
+import { Hero } from '@/shared/_components/hero/Hero';
 import { Reviews } from '@/shared/_components/reviews/Reviews';
 
 // content
@@ -25,6 +25,8 @@ export default function ReviewsPage() {
             buttonText="Leave a Review"
           />
         }
+        classNameButton={styles.heroButton}
+        classNameTitle={styles.heroTitle}
       />
       <Reviews
         isFavorites={false}

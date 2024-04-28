@@ -3,7 +3,7 @@
 import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
-import { Hero } from '../_components/hero/Hero';
+import { Hero } from '@/shared/_components/hero/Hero';
 import { SectionHeader } from '../_components/sectionHeader/SectionHeader';
 import { FavoriteServices } from '../_components/favoriteServices/FavoriteServices';
 import { PastProjects } from '../_components/pastProjects/PastProjects';
@@ -23,6 +23,8 @@ export default function HomePage() {
       <Hero
         classNameBackground={styles.heroBackground}
         content={content.hero}
+        classNameButton={styles.heroButton}
+        classNameTitle={styles.heroTitle}
       />
       <FavoriteServices />
       <PastProjects />

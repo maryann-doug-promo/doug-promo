@@ -2,7 +2,7 @@
 import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
-import { Hero } from '../_components/hero/Hero';
+import { Hero } from '@/shared/_components/hero/Hero';
 
 // content
 import content from '@/personal_content/servicesPage.json'
@@ -17,6 +17,8 @@ export default function ServicesPage() {
       <Hero
         classNameBackground={styles.heroBackground}
         content={content.hero}
+        classNameButton={styles.heroButton}
+        classNameTitle={styles.heroTitle}
       />
       <Services />
     </MainFullPage>
