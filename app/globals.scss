@@ -38,6 +38,11 @@ a {
   }
 }
 
+.reviewCardBorders {
+  border: 1px solid personal.$secondary-color;
+  border-radius: 0.5rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

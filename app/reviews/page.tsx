@@ -25,7 +25,11 @@ export default function ReviewsPage() {
           />
         }
       />
-      <Reviews />
+      <Reviews
+        isFavorites={false}
+        sectionTitle={null}
+        classNameCard={"reviewCardBorders"}
+      />
     </MainFullPage>
   );
 }

@@ -16,7 +16,7 @@ interface GeneralCardProps {
 
 export const GeneralCard = ({ title, description, cardClassName }: GeneralCardProps) => {
   return (
-    <Card className={classNames(styles.generalCard, cardClassName)}>
+    <Card className={classNames(styles.generalCard, "reviewCardBorders", cardClassName)}>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
     </Card>

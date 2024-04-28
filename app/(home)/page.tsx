@@ -9,7 +9,7 @@ import { FavoriteServices } from '../_components/favoriteServices/FavoriteServic
 import { PastProjects } from '../_components/pastProjects/PastProjects';
 
 // shared components
-import { FavoriteReviews } from '@/shared/_components/favoriteReviews/FavoriteReviews';
+import { Reviews } from '@/shared/_components/reviews/Reviews';
 
 // content
 import content from '@/personal_content/homePage.json';
@@ -26,7 +26,10 @@ export default function HomePage() {
       />
       <FavoriteServices />
       <PastProjects />
-      <FavoriteReviews
+      {/* The Reviews are for the favorite reviews */}
+      <Reviews
+        classNameCard={"reviewCardBorders"}
+        isFavorites={true}
         sectionTitle={(
           <SectionHeader
             title={content.favoriteReviews.title}
