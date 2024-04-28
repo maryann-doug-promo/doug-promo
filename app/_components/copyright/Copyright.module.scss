@@ -1,0 +1,19 @@
+@use '../../../shared/variables.scss' as general;
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    gap: 0.5rem;
+  }
+}
+
+.copyrightIconContainer {
+  width: 0.65rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 0.75rem;
+  }
+}

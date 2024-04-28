@@ -4,16 +4,6 @@
 $text-size-mobile: 0.85rem;
 $text-size-desktop: 1.15rem;
 
-.copyright {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
-.copyrightIconContainer {
-  width: 0.75rem;
-}
-
 .footer {
   width: 100%;
   display: flex;
@@ -24,6 +14,23 @@ $text-size-desktop: 1.15rem;
   background-color: personal.$footer-color;
   color: personal.$footer-font-color;
 
+
+  font-size: $text-size-mobile;
+
+  text-align: center;
+
+  @media screen and (min-width: general.$small-width ) {
+    font-size: $text-size-desktop;
+  }
+
+}
+
+.sloganAddress {
+  font-size: $text-size-mobile;
+
+  @media screen and (min-width: general.$small-width ) {
+    font-size: $text-size-desktop;
+  }
 }
 
 .innerFooter {
@@ -31,23 +38,10 @@ $text-size-desktop: 1.15rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.15rem;
-}
+  gap: 0.35rem;
 
-.email {
-  color: general.$font-white;
-  font-size: $text-size-mobile;
-  padding: 0.5rem;
-
-  @media screen and (min-width: general.$medium-width) {
+  @media screen and (min-width: general.$small-width ) {
     font-size: $text-size-desktop;
-  }
-}
-
-.text {
-  font-size: $text-size-mobile;
-
-  @media screen and (min-width: general.$medium-width) {
-    font-size: $text-size-desktop;
+    gap: 0.15rem;
   }
 }
