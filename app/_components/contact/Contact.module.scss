@@ -17,14 +17,14 @@
 
 .formTitle {
   text-transform: uppercase;
-  color: personal.$grey-four;
+  color: personal.$primary-color;
   margin-bottom: 0.5rem;
 
   font-size: 1.5rem;
 }
 
 .formFields {
-  color: personal.$grey-four;
+  color: personal.$primary-color;
   font-weight: bold;
 }
 
@@ -38,7 +38,7 @@
 
 .formSubmitButton {
   cursor: pointer;
-  background-color: personal.$grey-four !important;
+  background-color: personal.$primary-color !important;
   border-radius: 1rem;
 
   padding: 0.5rem 1rem;

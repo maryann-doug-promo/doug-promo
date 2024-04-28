@@ -11,7 +11,7 @@
   .line {
     flex-grow: 1;
     height: 2px;
-    background-color: personal.$grey-four;
+    background-color: personal.$primary-color;
     margin: 0 1.25rem;
   }
 
@@ -20,7 +20,7 @@
     padding: 0;
     font-size: 2rem;
 
-    color: personal.$grey-four;
+    color: personal.$primary-color;
   }
 }
 
@@ -29,7 +29,7 @@
 }
 
 .subTitle {
-  color: personal.$grey-four;
+  color: personal.$primary-color;
   text-align: center;
   font-weight: normal;
 }

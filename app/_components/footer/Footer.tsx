@@ -26,7 +26,7 @@ export const Footer = () => {
             className={styles.copyrightIconContainer}
           >
             <Icon
-              id='copyright'
+              id='copyrightBlack'
               alt='Copyright Icon'
               tooltip='Copyright to Mary Ann Owen'
             />

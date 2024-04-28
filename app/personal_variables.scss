@@ -1,15 +1,15 @@
 // grey color
-$grey-one: #E1E3DE;
-$grey-four: #959A90;
-$grey-five: #74786C;
+$primary-color: #959A90;
+$secondary-color: #74786C;
+$tertiary-color: #E1E3DE;
 
 // header
 $header-height: 8rem;
 // $header-color: #F0F0F0;
 $header-color: white;
-$header-font-color: $grey-five;
+$header-font-color: $secondary-color;
 
 // footer
-$footer-height: 10rem;
-$footer-color: grey;
-$footer-font-color: white;
+$footer-height: 8rem;
+$footer-color: $tertiary-color;
+$footer-font-color: black;
