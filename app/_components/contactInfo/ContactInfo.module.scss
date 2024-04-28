@@ -1,3 +1,4 @@
+@use '../../../shared/variables.scss' as general;
 @use '../../personal_variables.scss' as personal;
 
 .areas {
@@ -12,16 +13,55 @@
 }
 
 .h3 {
-  font-size: 1.85rem;
+  font-size: 1.35rem;
   font-weight: normal;
+
+  @media screen and (min-width: general.$small-width ) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: general.$large-width ) {
+    font-size: 1.75rem;
+  }
+}
+
+.personalInfo {
+  margin-top: 0.75rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    margin-top: 0;
+  }
+}
+
+.serviceAreas {
+  margin-top: 0.75rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    margin-top: 0;
+  }
 }
 
 .h5 {
   font-size: 1rem;
 }
 
+.companyNameSlogan {
+  margin-top: 0.75rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    margin-top: 0;
+  }
+}
+
 .instructions {
   display: flex;
   flex-direction: column;
   gap: .75rem;
+
+  margin-top: 0.75rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    margin-top: 0;
+  }
+
 }

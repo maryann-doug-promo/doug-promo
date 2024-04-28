@@ -5,13 +5,16 @@
   display: flex;
   gap: 3rem;
 
-  width: 80%;
   margin: 0 auto;
 
   flex-direction: column;
 
   @media screen and (min-width: general.$small-width ) {
     flex-direction: row;
+  }
+
+  @media screen and (min-width: general.$large-width ) {
+    width: 80%;
   }
 }
 
@@ -20,7 +23,17 @@
   color: personal.$primary-color;
   margin-bottom: 0.5rem;
 
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1;
+
+  @media screen and (min-width: general.$small-width ) {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+
+  @media screen and (min-width: general.$large-width ) {
+    font-size: 1.5rem;
+  }
 }
 
 .formFields {

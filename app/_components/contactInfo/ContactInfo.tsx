@@ -29,13 +29,13 @@ export const ContactInfo = ({ className }: ContactInfoProps) => {
           )
         })}
       </div>
-      <h3 className={styles.h3}>{`${personalInfo.company_name}, ${personalInfo.slogan}`}</h3>
-      <div>
+      <h3 className={classNames(styles.h3, styles.companyNameSlogan)}>{`${personalInfo.company_name}, ${personalInfo.slogan}`}</h3>
+      <div className={styles.personalInfo}>
         <h3 className={styles.h3}>{`${personalInfo.name.first} ${personalInfo.name.last}`}</h3>
         <h3 className={styles.h3}>{personalInfo.email}</h3>
         <h3 className={styles.h3}>{formatPhoneNumber(personalInfo.phone_number)}</h3>
       </div>
-      <div>
+      <div className={styles.serviceAreas}>
         <h5 className={styles.h5}>{content.serviceAreas.title}</h5>
         <div className={styles.areas}>
           {content.serviceAreas.areas.map((area: string, index) => {
