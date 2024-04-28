@@ -1,5 +1,7 @@
 "use server"
 
+import classNames from 'classnames';
+
 // layouts
 import { Card } from '@/shared/_layouts/card/Card';
 
@@ -18,15 +20,16 @@ interface ReviewProps {
   review: ReviewType;
   page: string;
   type: string;
+  classNameCard?: string;
 }
 
-export const Review = ({ review, page, type }: ReviewProps) => {
+export const Review = ({ review, page, type, classNameCard }: ReviewProps) => {
 
   const timeAgo = getTimeAgo(review.updated_at);
 
   return (
     <>
-      <Card className={styles.card}>
+      <Card className={classNames(styles.card, classNameCard)}>
         <h3>{review.reviewer_name}</h3>
         <div className={styles.rating}>
           {Array.from({ length: review.rating }, (_, index) => {

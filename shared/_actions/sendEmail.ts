@@ -46,8 +46,6 @@ const getTransporter = () => {
 const sendEmail = (subject: string, html: string) => {
   const transporter = getTransporter();
 
-  console.log(TO_EMAIL_ADDRESS, FROM_EMAIL_ADDRESS);
-
   transporter.sendMail(
     {
       to: TO_EMAIL_ADDRESS,
