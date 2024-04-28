@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 
 // components
-import { SectionHeader } from '@/app/_components/sectionHeader/SectionHeader';
+import { SectionHeader } from '@/shared/_components/sectionHeader/SectionHeader';
 
 // styles
 import styles from './CardsSection.module.scss';

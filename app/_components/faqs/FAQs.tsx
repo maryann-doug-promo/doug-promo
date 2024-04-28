@@ -3,7 +3,7 @@
 import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 
 // components
-import { SectionHeader } from '../sectionHeader/SectionHeader';
+import { SectionHeader } from '../../../shared/_components/sectionHeader/SectionHeader';
 import { FAQ } from '../faq/FAQ';
 
 // content

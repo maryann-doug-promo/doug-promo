@@ -4,7 +4,7 @@
 import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 
 // components
-import { SectionHeader } from '../sectionHeader/SectionHeader';
+import { SectionHeader } from '../../../shared/_components/sectionHeader/SectionHeader';
 
 // shared components
 import { ContactForm } from '@/shared/_components/contactForm/ContactForm';

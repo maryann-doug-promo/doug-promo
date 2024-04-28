@@ -4,7 +4,7 @@ import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
 import { Hero } from '@/shared/_components/hero/Hero';
-import { SectionHeader } from '../_components/sectionHeader/SectionHeader';
+import { SectionHeader } from '../../shared/_components/sectionHeader/SectionHeader';
 import { FavoriteServices } from '../_components/favoriteServices/FavoriteServices';
 import { PastProjects } from '../_components/pastProjects/PastProjects';
 
