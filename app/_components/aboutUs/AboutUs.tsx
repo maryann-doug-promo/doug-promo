@@ -13,23 +13,21 @@ import { GeneralCard } from '../generalCard/GeneralCard';
 
 export const AboutUs = () => {
   return (
-    <PageSection>
-      <CardsSection
-        title={content.title}
-        classNameCards={styles.cards}
-        classNameTitle={styles.title}
-        cards={
-          content.qualifications.map((qualification, index: number) => {
-            return (
-              <GeneralCard
-                key={`aboutUs_qualification_${index}`}
-                title={qualification.title}
-                description={qualification.description}
-              />
-            )
-          })
-        }
-      />
-    </PageSection>
+    <CardsSection
+      title={content.title}
+      classNameCards={styles.cards}
+      classNameTitle={styles.title}
+      cards={
+        content.qualifications.map((qualification, index: number) => {
+          return (
+            <GeneralCard
+              key={`aboutUs_qualification_${index}`}
+              title={qualification.title}
+              description={qualification.description}
+            />
+          )
+        })
+      }
+    />
   )
 }

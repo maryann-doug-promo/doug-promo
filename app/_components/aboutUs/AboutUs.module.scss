@@ -1,5 +1,18 @@
+@use '../../../shared/variables.scss' as general;
+
 .title {
-  width: 70%;
-  // TODO I HATE USING IMPORTANT LIKE THIS!!
-  font-size: 3rem !important;
+
+  font-size: 2rem;
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 85%;
+    // TODO I HATE USING IMPORTANT LIKE THIS!!
+    font-size: 2.5rem !important;
+  }
+
+  @media screen and (min-width: general.$large-width ) {
+    width: 70%;
+    // TODO I HATE USING IMPORTANT LIKE THIS!!
+    font-size: 3rem !important;
+  }
 }
