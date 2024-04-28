@@ -40,3 +40,6 @@ bun.lockb
 
 # vs code
 .vscode
+
+# shared folder
+/shared
