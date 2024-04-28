@@ -21,6 +21,7 @@ export default function ReviewsPage() {
         callToAction={
           <LeaveReview
             classNameButton={styles.heroLeaveReviewButton}
+            classNameForm={styles.leaveReviewForm}
             buttonText="Leave a Review"
           />
         }
