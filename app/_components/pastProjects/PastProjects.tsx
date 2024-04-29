@@ -4,7 +4,7 @@
 import { ProjectType } from '@/personal_types/project';
 
 // layouts
-import { CardsSection } from '@/app/_layouts/cardsSection/CardsSection';
+import { CardsSection } from '@/shared/_layouts/cardsSection/CardsSection';
 
 // components
 import { PastProject } from '../PastProject/PastProject';

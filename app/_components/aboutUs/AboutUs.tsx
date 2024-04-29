@@ -1,15 +1,16 @@
 
 
 // layouts
-import { CardsSection } from '@/app/_layouts/cardsSection/CardsSection';
-import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
+import { CardsSection } from '@/shared/_layouts/cardsSection/CardsSection';
+
+// components
+import { GeneralCard } from '@/shared/_components/generalCard/GeneralCard';
 
 // styles
 import styles from './AboutUs.module.scss';
 
 // content
 import content from '@/personal_content/aboutUs.json'
-import { GeneralCard } from '../generalCard/GeneralCard';
 
 export const AboutUs = () => {
   return (
