@@ -2,8 +2,12 @@
   "title": "Past Projects",
   "projects": [
     {
-      "title": "Powerwashed House",
-      "description": "Powerwashed the side of a house that was covered in slime. Now sparking clean."
+      "title": "Kitchen Renovation",
+      "description": "Replaced outdated light fixtures, faucets, and garbage disposal in an older kitchen, giving it a fresh, modern look while improving functionality."
+    },
+    {
+      "title": "Backyard Makeover",
+      "description": "Repaired and stained the existing fence, and mounted outdoor lighting, transforming an unkempt backyard into an inviting outdoor living space."
     }
   ]
 }
