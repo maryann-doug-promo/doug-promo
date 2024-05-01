@@ -1,10 +1,12 @@
 
 const SITE_URL = process.env.HTML_THI_WEBSITE || 'https://doug-promo.vercel.app';
+const DEFAULT_CHANGE_FREQUENCY = "Monthly";
 const DEFAULT_PRIORITY = 0.6;
 
 const PRIORITIES = {
   "/services": 0.9
 };
+const CHANGE_FREQUENCY = {};
 
 // Paths that need to be manually added
 const PATH_TO_ADD = [
@@ -21,13 +23,6 @@ const PATH_TO_ADD = [
     lastmod: new Date().toISOString(),
   }
 ];
-
-// Check if the path passed in is in the manually added paths
-const inPathToAdd = (path) => {
-  return PATH_TO_ADD.includes((addingPath) => {
-    return addingPath === path;
-  });
-}
 
 const config = {
   siteUrl: SITE_URL,
@@ -50,11 +45,10 @@ const config = {
   transform: async (config, path) => {
     return {
       loc: `${SITE_URL}/${path}`,
-      changefreq: 'monthly',
+      changefreq: CHANGE_FREQUENCY[path] ?? DEFAULT_CHANGE_FREQUENCY,
       priority: PRIORITIES[path] ?? DEFAULT_PRIORITY,
       lastmod: new Date().toISOString(),
     };
-
   },
   additionalPaths: async (config) => {
     const paths = [];
