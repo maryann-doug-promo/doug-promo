@@ -11,6 +11,7 @@ import "./globals.scss";
 import content from '@/personal_content/rootLayout.json';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.HTML_THIS_WEBSITE ?? "https://doug-promo.vercel.app/"),
   title: content.metaData.title,
   description: content.metaData.description,
   openGraph: {
@@ -18,11 +19,7 @@ export const metadata: Metadata = {
     description: 'New Kent Handyman provides licensed and insured handyman services in New Kent and surrounding areas. From repairs to full renovations, trust New Kent Handyman to handle your home improvement needs efficiently.',
     url: process.env.HTML_THIS_WEBSITE ?? "https://doug-promo.vercel.app/",
     siteName: 'New Kent Handyman',
-    images: [
-      {
-        url: `${process.env.HTML_THIS_WEBSITE ?? "https://doug-promo.vercel.app/"}/opengraph-image.png`
-      }
-    ],
+    images: `/opengraph-image.png`,
     locale: 'en_US',
     type: 'website',
   }
