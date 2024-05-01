@@ -12,7 +12,7 @@ const CHANGE_FREQUENCY = {};
 const PATH_TO_ADD = [
   {
     name: `/`,
-    changefreq: 'weekly',
+    changefreq: 'Weekly',
     priority: 0.8,
     lastmod: new Date().toISOString(),
   },
