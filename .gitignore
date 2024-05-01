@@ -44,3 +44,8 @@ bun.lockb
 
 # shared folder
 /shared
+
+# ignore robots and sitemap. They are built on the build
+/public/robots.txt
+/public/sitemap-0.xml
+/public/sitemap.xml
