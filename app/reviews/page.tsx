@@ -1,8 +1,12 @@
+
+import { Metadata } from 'next';
+
 // layouts
 import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
 import { Hero } from '@/shared/_components/hero/Hero';
+import { LeaveReview } from '@/shared/_components/leaveReview/LeaveReview';
 import { Reviews } from '@/shared/_components/reviews/Reviews';
 
 // content
@@ -10,7 +14,11 @@ import content from '@/personal_content/reviewsPage.json';
 
 // styles
 import styles from './page.module.scss';
-import { LeaveReview } from '@/shared/_components/leaveReview/LeaveReview';
+
+export const metadata: Metadata = {
+  title: content.metaData.title,
+  description: content.metaData.description
+};
 
 export default function ReviewsPage() {
   return (

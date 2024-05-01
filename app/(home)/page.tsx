@@ -1,4 +1,6 @@
 
+import { Metadata } from 'next';
+
 // layouts
 import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
@@ -16,6 +18,11 @@ import content from '@/personal_content/homePage.json';
 
 // styles
 import styles from './page.module.scss';
+
+export const metadata: Metadata = {
+  title: content.metaData.title,
+  description: content.metaData.description
+};
 
 export default function HomePage() {
   return (

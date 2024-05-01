@@ -7,9 +7,12 @@ import styles from './layout.module.scss';
 // NOTE: the globals being imported here is going across all components. Even ones in the shared folder
 import "./globals.scss";
 
+// content
+import content from '@/personal_content/rootLayout.json';
+
 export const metadata: Metadata = {
-  title: "New Kent Handyman",
-  description: "New Kent Handyman Doug Owen",
+  title: content.metaData.title,
+  description: content.metaData.description
 };
 
 interface RootLayoutProps {

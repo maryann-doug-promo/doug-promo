@@ -2,20 +2,5 @@
   "metaData": {
     "title": "New Kent Handyman - Your Licensed Neighborhood Handyman",
     "description": "Professional licensed handyman services in New Kent and surrounding areas. Detailed construction and installations. Routine Maintenance. Emergency Repairs. Trust our licensed professionals to handle your home projects efficiently. Free consultations available!"
-  },
-  "hero": {
-    "title": "Your Neighborhood Handyman, LLC",
-    "headlines": [
-      "Licensed and Insured",
-      "handyman servicing",
-      "New Kent & surrounding areas"
-    ],
-    "callToActionButton": {
-      "href": "/contact",
-      "label": "Get a Quote"
-    }
-  },
-  "favoriteReviews": {
-    "title": "Reviews From Trusted Neighbors"
   }
 }
