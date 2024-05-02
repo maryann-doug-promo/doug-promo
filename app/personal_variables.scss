@@ -1,16 +1,18 @@
 // grey color
-$primary-color: #959A90;
-$secondary-color: #74786C;
-$tertiary-color: #E1E3DE;
+$primary-color: #8B572A;
+// $primary-color: #D87C30;
+$secondary-color: #333333;
+$tertiary-color: #CCCCCC;
+$quatenary-color: #F4F4F4;
 
 // header
 $header-height-mobile: 6rem;
 $header-height-desktop: 8rem;
 // $header-color: #F0F0F0;
-$header-color: white;
+$header-color: $tertiary-color;
 $header-font-color: $secondary-color;
 
 // footer
 $footer-height: 8rem;
 $footer-color: $tertiary-color;
-$footer-font-color: black;
+$footer-font-color: $secondary-color;

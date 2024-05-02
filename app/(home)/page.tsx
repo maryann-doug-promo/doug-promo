@@ -9,6 +9,7 @@ import { Hero } from '@/shared/_components/hero/Hero';
 import { SectionHeader } from '../../shared/_components/sectionHeader/SectionHeader';
 import { FavoriteServices } from '../_components/favoriteServices/FavoriteServices';
 import { PastProjects } from '../_components/pastProjects/PastProjects';
+import { Promotion } from '../_components/promotion/Promotion';
 
 // shared components
 import { Reviews } from '@/shared/_components/reviews/Reviews';
@@ -33,10 +34,12 @@ export default function HomePage() {
         classNameButton={styles.heroButton}
         classNameTitle={styles.heroTitle}
       />
+      <Promotion />
       <FavoriteServices />
       <PastProjects />
       {/* The Reviews are for the favorite reviews */}
       <Reviews
+        classNameBackground={styles.reviewsBackground}
         classNameCard={"cardBorders"}
         isFavorites={true}
         sectionTitle={(

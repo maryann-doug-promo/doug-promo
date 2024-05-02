@@ -19,6 +19,7 @@ import styles from './FavoriteServices.module.scss';
 export const FavoriteServices = () => {
   return (
     <CardsSection
+      className={styles.cardsSection}
       title={content.title}
       cards={
         services.favorites.map((service: FavoriteServiceType, index: number) => {
