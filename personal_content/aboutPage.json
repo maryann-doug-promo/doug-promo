@@ -2,5 +2,16 @@
   "metaData": {
     "title": "Experienced Handyman Services - Reliable & Fair Priced Repairs and Improvements",
     "description": "Find a punctual and trustworthy repair professional for all your household needs. From electrical installations to complete renovations, we offer experienced services at fair prices. Enjoy a free consultation to explore options tailored for your home or business. Licensed and insured for your peace of mind."
+  },
+  "hero": {
+    "title": "About New Kent Handyman, LLC",
+    "headlines": [
+      "Expertise That You Can Trust"
+    ],
+    "subheadline": "Bringing precision, professionalism, and reliability to every home in New Kent, Henrico, and Hanover.",
+    "callToActionButton": {
+      "href": "/contact",
+      "label": "Get a Quote"
+    }
   }
 }

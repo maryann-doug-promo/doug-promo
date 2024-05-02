@@ -1,0 +1,22 @@
+@use '../../shared/variables.scss' as general;
+@use '../personal_variables.scss' as personal;
+
+.heroBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-image: url('/assets/shed_room.png');
+}
+
+.heroTitle {
+  color: personal.$secondary-color;
+
+  @media screen and (min-width: general.$small-width ) {
+    width: 75%;
+  }
+}
+
+.heroButton {
+  background-color: personal.$primary-color;
+}

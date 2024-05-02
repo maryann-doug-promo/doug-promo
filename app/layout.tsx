@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: content.metaData.description,
   openGraph: {
     title: 'New Kent Handyman - Professional Handyman Services in New Kent',
-    description: 'New Kent Handyman provides licensed and insured handyman services in New Kent and surrounding areas. From repairs to full renovations, trust New Kent Handyman to handle your home improvement needs efficiently.',
+    description: 'New Kent Handyman provides licensed and insured handyman services in New Kent, Henrico, and Hanover. From repairs to full renovations, trust New Kent Handyman to handle your home improvement needs efficiently.',
     url: process.env.HTML_THIS_WEBSITE ?? "https://doug-promo.vercel.app/",
     siteName: 'New Kent Handyman',
     images: `/opengraph-image.png`,
