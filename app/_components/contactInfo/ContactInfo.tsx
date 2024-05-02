@@ -29,7 +29,7 @@ export const ContactInfo = ({ className }: ContactInfoProps) => {
           )
         })}
       </div>
-      <h3 className={classNames(styles.h3, styles.companyNameSlogan)}>{`${personalInfo.company_name}, ${personalInfo.slogan}`}</h3>
+      <h3 className={classNames(styles.h3, styles.companyName)}>{`${personalInfo.company_name}`}</h3>
       <div className={styles.personalInfo}>
         <h3 className={styles.h3}>{`${personalInfo.name.first} ${personalInfo.name.last}`}</h3>
         <h3 className={styles.h3}>{personalInfo.email}</h3>

@@ -1,11 +1,10 @@
 {
-  "company_name": "New Kent Handyman",
+  "company_name": "New Kent Handyman, LLC",
   "name": {
     "first": "Doug",
     "last": "Owen"
   },
   "email": "dmomao@gmail.com",
   "phone_number": "9105475897",
-  "address": "8014 W. Lord Botetourt Loop New Kent, VA 23124",
-  "slogan": "Your Neighborhood Handyman LLC"
+  "address": "8014 W. Lord Botetourt Loop New Kent, VA 23124"
 }
