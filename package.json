@@ -31,6 +31,5 @@
     "eslint-config-next": "14.2.2",
     "typescript": "^5"
   },
-  "module": "index.ts",
   "type": "module"
 }
