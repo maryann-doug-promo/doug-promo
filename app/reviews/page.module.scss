@@ -11,10 +11,11 @@
 .heroLeaveReviewButton {
   cursor: pointer;
   background-color: personal.$primary-color !important;
-  border-radius: 1rem;
+  border-radius: 2rem;
 
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   color: white;
+  letter-spacing: 1px;
 
   border: none;
   font-size: 1rem;
