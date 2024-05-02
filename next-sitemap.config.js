@@ -1,5 +1,5 @@
 
-const SITE_URL = process.env.HTML_THI_WEBSITE || 'https://doug-promo.vercel.app';
+const SITE_URL = process.env.HTML_THIS_WEBSITE || 'https://doug-promo.vercel.app';
 const DEFAULT_CHANGE_FREQUENCY = "Monthly";
 const DEFAULT_PRIORITY = 0.6;
 
