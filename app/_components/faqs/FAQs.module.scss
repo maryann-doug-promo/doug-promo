@@ -1,10 +1,6 @@
 @use '../../../shared/variables.scss' as general;
 @use '../../personal_variables.scss' as personal;
 
-.background {
-  background-color: personal.$quatenary-color;
-}
-
 .faqs {
   display: flex;
   flex-direction: column;

@@ -16,6 +16,7 @@ export const AboutUs = () => {
   return (
     <CardsSection
       title={content.title}
+      className={styles.background}
       classNameCards={styles.cards}
       classNameTitle={styles.title}
       cards={

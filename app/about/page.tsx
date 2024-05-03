@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
+import { AboutHandyman } from '../_components/aboutHandyman/AboutHandyman';
 import { AboutUs } from '../_components/aboutUs/AboutUs';
 import { FAQs } from '../_components/faqs/FAQs';
 import { Hero } from '@/shared/_components/hero/Hero';
@@ -29,6 +30,7 @@ export default function AboutPage() {
         classNameButton={styles.heroButton}
         classNameTitle={styles.heroTitle}
       />
+      <AboutHandyman />
       <AboutUs />
       <FAQs />
     </MainFullPage>

@@ -20,7 +20,7 @@ import styles from './FAQs.module.scss';
 
 export const FAQs = () => {
   return (
-    <PageSection background={styles.background}>
+    <PageSection>
       <SectionHeader
         title={content.title}
         subTitle={content.subTitle}
