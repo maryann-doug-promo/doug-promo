@@ -15,6 +15,36 @@
       "label": "Get a Quote"
     }
   },
+  "promotion": {
+    "title": "Why Choose a Handyman?",
+    "info": {
+      "title": {
+        "desktop": "Handyman Benefits",
+        "mobile": "Why Choose a Handyman?"
+      },
+      "benefits": [
+        {
+          "title": "Save Time",
+          "description": "With busy schedules, you don't have time for home repairs. Let a professional handle them."
+        },
+        {
+          "title": "Cost-Effective",
+          "description": "Get services like ceiling fan installation, power washing, and light fixture replacement at a fraction of the cost."
+        },
+        {
+          "title": "Quality Workmanship",
+          "description": "Experienced in a wide range of home maintenance tasks."
+        },
+        {
+          "title": "Convenience",
+          "description": "From fixing leaky faucets to cleaning patios, one call does it all."
+        }
+      ]
+    },
+    "image": {
+      "alt": "Handyman installing a ceiling fan."
+    }
+  },
   "favoriteReviews": {
     "title": "Reviews From Trusted Neighbors"
   }

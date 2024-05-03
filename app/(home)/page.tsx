@@ -9,10 +9,13 @@ import { Hero } from '@/shared/_components/hero/Hero';
 import { SectionHeader } from '../../shared/_components/sectionHeader/SectionHeader';
 import { FavoriteServices } from '../_components/favoriteServices/FavoriteServices';
 import { PastProjects } from '../_components/pastProjects/PastProjects';
-import { Promotion } from '../_components/promotion/Promotion';
 
 // shared components
+import { Promotion } from '@/shared/_components/promotion/Promotion';
 import { Reviews } from '@/shared/_components/reviews/Reviews';
+
+// promo pic
+import promoPic from '@/public/assets/intallFan.webp';
 
 // content
 import content from '@/personal_content/homePage.json';
@@ -34,7 +37,11 @@ export default function HomePage() {
         classNameButton={styles.heroButton}
         classNameTitle={styles.heroTitle}
       />
-      <Promotion />
+      <Promotion
+        page='home'
+        content={content.promotion}
+        promoPic={promoPic}
+      />
       <FavoriteServices />
       <PastProjects />
       {/* The Reviews are for the favorite reviews */}
