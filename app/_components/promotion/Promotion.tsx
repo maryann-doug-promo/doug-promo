@@ -2,36 +2,56 @@
 import Image from "next/image";
 
 // layouts
+import { SplitSection } from '@/shared/_layouts/splitSection/SplitSection';
+import { UnorderedList } from "@/shared/_layouts/unorderedList/UnorderedList";
 
 // components
 
 // image
-import handyman from '@/public/assets/handyman.webp';
+import promoPic from '@/public/assets/intallFan.webp';
 
 // content
 import content from '@/personal_content/promotion.json';
 
 // stylse
 import styles from './Promotion.module.scss';
-import { SplitSection } from '@/shared/_layouts/splitSection/SplitSection';
+
+// local types
+interface BenefitType {
+  title: string;
+  description: string;
+}
 
 export const Promotion = () => {
+  const thisComponent = "promotion";
   return (
     <SplitSection
       title={content.title}
       panelA={
         <>
           <h3 className={styles.infoHeader}>{content.info.title}</h3>
-          {content.info.descriptions.map((description: string, index: number) => {
-            return (
-              <p key={`promotion_description_${index}`} className={styles.description}>{description}</p>
-            )
-          })}
+          <UnorderedList
+            page="home"
+            category="promotion"
+            items={
+              content.info.benefits.map((benefit: BenefitType, index: number) => {
+                return (
+                  <div
+                    key={`${thisComponent}_description_${index}`}
+                    className={styles.benefit}
+                  >
+                    <span className={styles.benefitTitle}>{`${benefit.title}:`}</span>
+                    <span className={styles.benefitDescription}>{benefit.description}</span>
+                  </div>
+                )
+              })
+            }
+          />
         </>
       }
       panelB={(
         <Image
-          src={handyman}
+          src={promoPic}
           alt={content.image.alt}
           className={styles.image}
         />
