@@ -37,13 +37,18 @@ export const ContactInfo = ({ className }: ContactInfoProps) => {
       </div>
       <div className={styles.serviceAreas}>
         <h5 className={styles.h5}>{content.serviceAreas.title}</h5>
-        <div className={styles.areas}>
+        <ul className={styles.areas}>
           {content.serviceAreas.areas.map((area: string, index) => {
             return (
-              <p key={`contact_contactInfo_serviceArea_${index}`}>{area}</p>
+              <li
+                key={`contact_contactInfo_serviceArea_${index}`}
+                className={styles.area}
+              >
+                {area}
+              </li>
             )
           })}
-        </div>
+        </ul>
       </div>
     </div>
   )
