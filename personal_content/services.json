@@ -3,14 +3,6 @@
     "title": "Services",
     "services": [
       {
-        "title": "Construction & Installation",
-        "description": "If you're looking for basic construction or installation, I have experience in both private homes and businesses. Check out my recent work!"
-      },
-      {
-        "title": "Repair & Remodeling",
-        "description": "Have you gone as far as your knowledge will take you on a project? For anything your home might need, I have you covered. Call for a free consultation!"
-      },
-      {
         "title": "Maintenance & Home Services",
         "description": "Don't risk further damage to your home by letting maintenance fall by the wayside. Let us save you time take care of your honey-do list! "
       }
@@ -54,6 +46,18 @@
       {
         "title": "Dryer Vent",
         "description": "Dryer vent cleaning"
+      }
+    ]
+  },
+  "old": {
+    "favorites": [
+      {
+        "title": "Construction & Installation",
+        "description": "If you're looking for basic construction or installation, I have experience in both private homes and businesses. Check out my recent work!"
+      },
+      {
+        "title": "Repair & Remodeling",
+        "description": "Have you gone as far as your knowledge will take you on a project? For anything your home might need, I have you covered. Call for a free consultation!"
       }
     ]
   }
