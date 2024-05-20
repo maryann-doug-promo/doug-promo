@@ -28,7 +28,9 @@ export default function ServicesPage() {
         classNameButton={styles.heroButton}
         classNameTitle={styles.heroTitle}
       />
-      <Services />
+      <Services
+        favorites={false}
+      />
     </MainFullPage>
   );
 }
