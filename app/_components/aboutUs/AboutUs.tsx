@@ -26,6 +26,7 @@ export const AboutUs = () => {
               key={`aboutUs_qualification_${index}`}
               title={qualification.title}
               description={qualification.description}
+              classNameDescription={styles.cardDescription}
             />
           )
         })

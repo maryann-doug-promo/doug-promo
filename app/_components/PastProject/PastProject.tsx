@@ -20,6 +20,7 @@ export const PastProject = ({ project }: PastProjectProps) => {
     <GeneralCard
       title={project.title}
       description={project.description}
+      classNameDescription={styles.cardDescription}
     />
   )
 }

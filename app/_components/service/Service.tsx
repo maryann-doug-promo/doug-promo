@@ -20,6 +20,7 @@ export const Service = ({ service }: ServiceProps) => {
     <GeneralCard
       title={service.title}
       description={service.description}
+      classNameDescription={styles.cardDescription}
     />
   )
 }
