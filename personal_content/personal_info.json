@@ -7,5 +7,17 @@
   },
   "email": "dmomao@gmail.com",
   "phone_number": "9105475897",
-  "address": "8014 W. Lord Botetourt Loop New Kent, VA 23124"
+  "address": "8014 W. Lord Botetourt Loop New Kent, VA 23124",
+  "service_areas": [
+    "New Kent",
+    "Quinton",
+    "Bottoms Bridge",
+    "Lanexa",
+    "Brookshire",
+    "Kentland",
+    "The Groves",
+    "The Arbors",
+    "Viniterra",
+    "surrounding areas..."
+  ]
 }

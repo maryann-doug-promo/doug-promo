@@ -38,7 +38,7 @@ export const ContactInfo = ({ className }: ContactInfoProps) => {
       <div className={styles.serviceAreas}>
         <h5 className={styles.h5}>{content.serviceAreas.title}</h5>
         <ul className={styles.areas}>
-          {content.serviceAreas.areas.map((area: string, index) => {
+          {personalInfo.service_areas.map((area: string, index) => {
             return (
               <li
                 key={`contact_contactInfo_serviceArea_${index}`}

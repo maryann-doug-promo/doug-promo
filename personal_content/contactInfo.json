@@ -6,18 +6,6 @@
     "For emergency service, please contact us by phone."
   ],
   "serviceAreas": {
-    "title": "We Service The Following Areas:",
-    "areas": [
-      "New Kent",
-      "Quinton",
-      "Bottoms Bridge",
-      "Lanexa",
-      "Brookshire",
-      "Kentland",
-      "The Groves",
-      "The Arbors",
-      "Viniterra",
-      "Surrounding areas..."
-    ]
+    "title": "We Service The Following Areas:"
   }
 }
