@@ -3,7 +3,7 @@
 import { ServiceType } from '@/personal_types/service';
 
 // components
-import { GeneralCard } from '../generalCard/GeneralCard';
+import { GeneralCard } from '@/shared/_components/generalCard/GeneralCard';
 
 // styles
 import styles from './Service.module.scss';

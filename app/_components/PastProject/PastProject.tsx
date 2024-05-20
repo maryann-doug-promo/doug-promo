@@ -3,7 +3,7 @@
 import { ProjectType } from '@/personal_types/project';
 
 // component
-import { GeneralCard } from '../generalCard/GeneralCard';
+import { GeneralCard } from '@/shared/_components/generalCard/GeneralCard';
 
 // styles
 import styles from './PastProject.module.scss';
