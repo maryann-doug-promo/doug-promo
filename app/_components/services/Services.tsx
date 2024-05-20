@@ -1,36 +1,32 @@
 
+// types
+import { ServiceType } from '@/personal_types/service';
 
 // layouts
-import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
+import { CardsSection } from '@/shared/_layouts/cardsSection/CardsSection';
 
+// Components
+import { Service } from '../service/Service';
 
 // content
 import content from '@/personal_content/services.json';
 
 // styles
-import { SectionHeader } from '../../../shared/_components/sectionHeader/SectionHeader';
-import stylse from './Services.module.scss';
-import { ServiceType } from '@/personal_types/service';
-import { Service } from '../service/Service';
+import styles from './Services.module.scss';
 
 export const Services = () => {
   return (
-    <PageSection
-      className={stylse.services}
-    >
-      <SectionHeader
-        title={content.title}
-      />
-      <div className={stylse.servicesList}>
-        {content.normal.map((service: ServiceType, index: number) => {
-          return (
-            <Service
-              key={`services_service_${index}`}
-              service={service}
-            />
-          )
-        })}
-      </div>
-    </PageSection>
+    <CardsSection
+      className={styles.services}
+      title={content.title}
+      cards={content.normal.map((service: ServiceType, index: number) => {
+        return (
+          <Service
+            key={`services_service_${index}`}
+            service={service}
+          />
+        )
+      })}
+    />
   )
 }
