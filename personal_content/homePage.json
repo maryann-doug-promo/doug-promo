@@ -1,14 +1,13 @@
 {
   "metaData": {
     "title": "New Kent Handyman - Your Licensed Neighborhood Handyman",
-    "description": "Professional licensed handyman services in New Kent, Henrico, and Hanover. Detailed construction and installations. Routine Maintenance. Emergency Repairs. Trust our licensed professionals to handle your home projects efficiently. Free consultations available!"
+    "description": "Professional licensed handyman services in New Kent, Quinton, Bottoms Bridge, Lanexa, Brookshire, Kentland, The Groves, The Arbors, Viniterra, and surrounding areas. Detailed construction and installations. Routine Maintenance. Emergency Repairs. Trust our licensed professionals to handle your home projects efficiently. Free consultations available!"
   },
   "hero": {
     "title": "New Kent Handyman, LLC",
     "headlines": [
       "Licensed and Insured",
-      "handyman servicing",
-      "New Kent, Henrico, and Hanover"
+      "Handyman Servicing"
     ],
     "callToActionButton": {
       "href": "/contact",
