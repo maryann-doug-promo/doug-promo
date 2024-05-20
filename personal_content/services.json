@@ -1,55 +1,60 @@
 {
-  "title": "Turn Your \"Honey Do\" List into a \"Honey Done\" List!",
-  "favorites": [
-    {
-      "title": "Construction & Installation",
-      "description": "If you're looking for basic construction or installation, I have experience in both private homes and businesses. Check out my recent work!"
-    },
-    {
-      "title": "Repair & Remodeling",
-      "description": "Have you gone as far as your knowledge will take you on a project? For anything your home might need, I have you covered. Call for a free consultation!"
-    },
-    {
-      "title": "Maintenance & Home Services",
-      "description": "Don't risk further damage to your home by letting maintenance fall by the wayside. Let us save you time take care of your honey-do list! "
-    }
-  ],
-  "normal": [
-    {
-      "title": "Ceiling Stuctures",
-      "description": "Hang ceiling fans, change ceiling light fixtures - especially pantry, laundry room, and closets"
-    },
-    {
-      "title": "Curtains & Shutters",
-      "description": "Hang blinds & curtains, install Plantation Shutters, take down or hang pictures or other decorations, install wall mount TV’s "
-    },
-    {
-      "title": "Assembly",
-      "description": "Assemble furniture (including picking up boxed items at the store); shelving installation and shelf assembly"
-    },
-    {
-      "title": "Power Washing",
-      "description": "Power washing house, deck, sidewalk, porch, patio, driveway, and fences; stain/re-stain decks and fences; seal/reseal driveways; driveway edge pavers installed"
-    },
-    {
-      "title": "Outdoors",
-      "description": "Deck and fence maintenance and repair; Pergola and Gazebo installation, maintenance, upgrades, and repair"
-    },
-    {
-      "title": "Plubming",
-      "description": "Replace and repair toilets, sinks, faucets; repair/replace garbage disposals."
-    },
-    {
-      "title": "Electronics",
-      "description": "Replace outlets and light switches, install dimmers, repair/replace outdoor lights and install new outdoor lights plus security lights and cameras"
-    },
-    {
-      "title": "Safety Detectors",
-      "description": "Replace batteries in smoke and carbon monoxide detectors; replace defective smoke and carbon monoxide detectors; install new smoke and carbon monoxide detector"
-    },
-    {
-      "title": "Dryer Vent",
-      "description": "Dryer vent cleaning"
-    }
-  ]
+  "favorites": {
+    "title": "Services",
+    "services": [
+      {
+        "title": "Construction & Installation",
+        "description": "If you're looking for basic construction or installation, I have experience in both private homes and businesses. Check out my recent work!"
+      },
+      {
+        "title": "Repair & Remodeling",
+        "description": "Have you gone as far as your knowledge will take you on a project? For anything your home might need, I have you covered. Call for a free consultation!"
+      },
+      {
+        "title": "Maintenance & Home Services",
+        "description": "Don't risk further damage to your home by letting maintenance fall by the wayside. Let us save you time take care of your honey-do list! "
+      }
+    ]
+  },
+  "all": {
+    "title": "Turn Your \"Honey Do\" List into a \"Honey Done\" List!",
+    "services": [
+      {
+        "title": "Ceiling Stuctures",
+        "description": "Hang ceiling fans, change ceiling light fixtures - especially pantry, laundry room, and closets"
+      },
+      {
+        "title": "Curtains & Shutters",
+        "description": "Hang blinds & curtains, install Plantation Shutters, take down or hang pictures or other decorations, install wall mount TV’s "
+      },
+      {
+        "title": "Assembly",
+        "description": "Assemble furniture (including picking up boxed items at the store); shelving installation and shelf assembly"
+      },
+      {
+        "title": "Power Washing",
+        "description": "Power washing house, deck, sidewalk, porch, patio, driveway, and fences; stain/re-stain decks and fences; seal/reseal driveways; driveway edge pavers installed"
+      },
+      {
+        "title": "Outdoors",
+        "description": "Deck and fence maintenance and repair; Pergola and Gazebo installation, maintenance, upgrades, and repair"
+      },
+      {
+        "title": "Plubming",
+        "description": "Replace and repair toilets, sinks, faucets; repair/replace garbage disposals."
+      },
+      {
+        "title": "Electronics",
+        "description": "Replace outlets and light switches, install dimmers, repair/replace outdoor lights and install new outdoor lights plus security lights and cameras"
+      },
+      {
+        "title": "Safety Detectors",
+        "description": "Replace batteries in smoke and carbon monoxide detectors; replace defective smoke and carbon monoxide detectors; install new smoke and carbon monoxide detector"
+      },
+      {
+        "title": "Dryer Vent",
+        "description": "Dryer vent cleaning"
+      }
+    ]
+  }
 }

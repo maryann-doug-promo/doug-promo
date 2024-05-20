@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 
 // types
 import { ServiceType } from '@/personal_types/service';
@@ -14,15 +15,24 @@ import content from '@/personal_content/services.json';
 // styles
 import styles from './Services.module.scss';
 
-export const Services = () => {
+interface ServicesProps {
+  className?: string;
+  favorites: boolean;
+}
+
+export const Services = ({ className, favorites }: ServicesProps) => {
+
+  const title = favorites ? content.favorites.title : content.all.title;
+  const services = favorites ? content.favorites.services : content.all.services;
+
   return (
     <CardsSection
-      className={styles.services}
-      title={content.title}
-      cards={content.normal.map((service: ServiceType, index: number) => {
+      className={classNames(styles.services, className)}
+      title={title}
+      cards={services.map((service: ServiceType, index: number) => {
         return (
           <Service
-            key={`services_service_${index}`}
+            key={`${favorites ? 'favorite' : "all"}_services_service_${index}`}
             service={service}
           />
         )

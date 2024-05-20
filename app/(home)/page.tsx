@@ -6,9 +6,9 @@ import { MainFullPage } from '@/shared/_layouts/mainFullPage/MainFullPage';
 
 // components
 import { Hero } from '@/shared/_components/hero/Hero';
-import { SectionHeader } from '../../shared/_components/sectionHeader/SectionHeader';
-import { FavoriteServices } from '../_components/favoriteServices/FavoriteServices';
 import { PastProjects } from '../_components/pastProjects/PastProjects';
+import { SectionHeader } from '../../shared/_components/sectionHeader/SectionHeader';
+import { Services } from '../_components/services/Services';
 
 // shared components
 import { Promotion } from '@/shared/_components/promotion/Promotion';
@@ -42,7 +42,10 @@ export default function HomePage() {
         content={content.promotion}
         promoPic={promoPic}
       />
-      <FavoriteServices />
+      <Services
+        className={styles.favoriteReviews}
+        favorites={true}
+      />
       <PastProjects />
       {/* The Reviews are for the favorite reviews */}
       <Reviews
