@@ -26,7 +26,12 @@ export const AboutHandyman = () => {
           <h3 className={styles.infoHeader}>{content.info.title}</h3>
           {content.info.descriptions.map((description: string, index: number) => {
             return (
-              <p key={`${thisComponent}_description_${index}`} className={styles.description}>{description}</p>
+              <p
+                key={`${thisComponent}_description_${index}`}
+                className={styles.description}
+              >
+                {description}
+              </p>
             )
           })}
         </>
