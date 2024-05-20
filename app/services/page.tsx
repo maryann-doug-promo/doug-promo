@@ -9,7 +9,8 @@ import { Hero } from '@/shared/_components/hero/Hero';
 import { Services } from '../_components/services/Services';
 
 // content
-import content from '@/personal_content/servicesPage.json'
+import content from '@/personal_content/servicesPage.json';
+import servicesContent from '@/personal_content/services.json';
 
 // styles
 import styles from './page.module.scss';
@@ -29,7 +30,9 @@ export default function ServicesPage() {
         classNameTitle={styles.heroTitle}
       />
       <Services
-        favorites={false}
+        services={servicesContent.all.services}
+        title={servicesContent.all.title}
+        type="all"
       />
     </MainFullPage>
   );

@@ -17,13 +17,12 @@ import styles from './Services.module.scss';
 
 interface ServicesProps {
   className?: string;
-  favorites: boolean;
+  type: string;
+  title: string;
+  services: ServiceType[]
 }
 
-export const Services = ({ className, favorites }: ServicesProps) => {
-
-  const title = favorites ? content.favorites.title : content.all.title;
-  const services = favorites ? content.favorites.services : content.all.services;
+export const Services = ({ className, services, title, type }: ServicesProps) => {
 
   return (
     <CardsSection
@@ -32,7 +31,7 @@ export const Services = ({ className, favorites }: ServicesProps) => {
       cards={services.map((service: ServiceType, index: number) => {
         return (
           <Service
-            key={`${favorites ? 'favorite' : "all"}_services_service_${index}`}
+            key={`${type}_services_service_${index}`}
             service={service}
           />
         )

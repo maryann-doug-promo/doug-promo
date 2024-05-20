@@ -19,6 +19,7 @@ import promoPic from '@/public/assets/intallFan.webp';
 
 // content
 import content from '@/personal_content/homePage.json';
+import servicesConent from '@/personal_content/services.json';
 
 // styles
 import styles from './page.module.scss';
@@ -44,7 +45,9 @@ export default function HomePage() {
       />
       <Services
         className={styles.favoriteReviews}
-        favorites={true}
+        services={servicesConent.favorites.services}
+        title={servicesConent.favorites.title}
+        type='favorite'
       />
       <PastProjects />
       {/* The Reviews are for the favorite reviews */}

@@ -49,6 +49,27 @@
       }
     ]
   },
+  "not_provided": {
+    "title": "Services Not Provided",
+    "services": [
+      {
+        "title": "No Appliance Repairs",
+        "description": "We do not work on appliances."
+      },
+      {
+        "title": "Limited Roofing Work",
+        "description": "I do not work on roofs, with some limited exceptions."
+      },
+      {
+        "title": "Basic Electrical Work Only",
+        "description": "I only perform very basic electrical work such as installing ceiling fans, ceiling lights, light switches, and dimmers."
+      },
+      {
+        "title": "No Permit-Required Work",
+        "description": "I do not perform any work that legally requires a permit. Homeowners can usually undertake most tasks without a permit, and those are the services I provide."
+      }
+    ]
+  },
   "old": {
     "favorites": [
       {
