@@ -30,7 +30,7 @@ const config = {
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
-      { userAgent: '*', disallow: '/.next' },
+      { userAgent: '*', disallow: '/_next' },
       { userAgent: '*', disallow: '/node_modules' },
       { userAgent: '*', disallow: '/personal_content' },
       { userAgent: '*', disallow: '/personal_types' },
