@@ -19,7 +19,17 @@ import promoPic from '@/public/assets/intallFan.webp';
 
 // content
 import content from '@/personal_content/homePage.json';
+import personalInfo from '@/personal_content/personal_info.json';
 import servicesConent from '@/personal_content/services.json';
+
+// Add the personal info for servicing areas
+// This seems weird to not have in the JSON but we only
+// want to put the servicing areas in the personal info JSON file
+// So this is a way to handle that
+content.hero.headlines = [
+  ...content.hero.headlines,
+  `Serving ${personalInfo.service_areas.join(", ")}`
+];
 
 // styles
 import styles from './page.module.scss';
