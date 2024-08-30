@@ -29,6 +29,7 @@ export const Footer = () => {
         <Copyright
           className={styles.copyright}
         />
+        <a href={content.privacy.url}><strong>{content.privacy.label}</strong></a>
       </div>
     </footer>
   )
