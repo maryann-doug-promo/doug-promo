@@ -7,7 +7,7 @@ import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 import { SectionHeader } from '../../../shared/_components/sectionHeader/SectionHeader';
 
 // shared components
-import { ContactForm } from '@/shared/_components/contactForm/ContactForm';
+import { ContactFormWrapper } from "@/shared/_components/contactFormWrapper/ContactFormWrapper";
 
 // content
 import content from '@/personal_content/contact.json';
@@ -23,7 +23,7 @@ export const Contact = () => {
       <div className={styles.contactOptions}>
         <div className={styles.contactFormSection}>
           <h3 className={styles.formTitle}>{content.formTitle}</h3>
-          <ContactForm
+          <ContactFormWrapper
             classNameFields={styles.formFields}
             classNameSubmitButton={styles.formSubmitButton}
             page="contact"
