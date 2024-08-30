@@ -37,7 +37,7 @@ NEEDS TO BE CHANGED TO THE CORRECT VERCEL WHEN READY!!!
 
 https://nesin.io/blog/backup-restore-vercel-postgres-database
   Dump so that it can be fully restored as is - use custom format - the below is for vercel
-    pg_dump -d postgresURL -Fc -f "vva_{DATE}.dmp"
+    pg_dump16 -d 'postgres://default:FtumRq5VTk0N@ep-spring-night-a42es172-pooler.us-east-1.aws.neon.tech/verceldb?sslmode=require' -Fc -f "mary_ann_doug_{DATE}.dmp"
 
   I DON"T KNOW HOW THIS WORKS YET!!!
   Restore the database from a custom formatted dump - for VERCEL. this should work but you would need to double check
