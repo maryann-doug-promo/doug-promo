@@ -7,7 +7,7 @@ import { PageSection } from '@/shared/_layouts/pageSection/PageSection';
 import { SectionHeader } from '../../../shared/_components/sectionHeader/SectionHeader';
 
 // shared components
-import { ContactFormWrapper } from "@/shared/_components/contactFormWrapper/ContactFormWrapper";
+import { ContactForm } from "@/shared/_components/contactForm/ContactForm";
 
 // content
 import content from '@/personal_content/contact.json';
@@ -15,6 +15,7 @@ import content from '@/personal_content/contact.json';
 // styles
 import styles from './Contact.module.scss';
 import { ContactInfo } from '../contactInfo/ContactInfo';
+import { GoogleRecaptchaWrapper } from '@/shared/_components/googleRecaptchaWrapper/GoogleRecaptchaWrapper';
 
 export const Contact = () => {
   return (
@@ -23,11 +24,13 @@ export const Contact = () => {
       <div className={styles.contactOptions}>
         <div className={styles.contactFormSection}>
           <h3 className={styles.formTitle}>{content.formTitle}</h3>
-          <ContactFormWrapper
-            classNameFields={styles.formFields}
-            classNameSubmitButton={styles.formSubmitButton}
-            page="contact"
-          />
+          <GoogleRecaptchaWrapper>
+            <ContactForm
+              classNameFields={styles.formFields}
+              classNameSubmitButton={styles.formSubmitButton}
+              page="contact"
+            />
+          </GoogleRecaptchaWrapper>
         </div>
         <ContactInfo className={styles.contactInfo} />
       </div>
