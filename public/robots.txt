@@ -1,0 +1,17 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /_next
+Disallow: /node_modules
+Disallow: /personal_content
+Disallow: /personal_types
+Disallow: /shared
+Disallow: /approve-review
+Disallow: /api
+Disallow: /.vercel
+
+# Host
+Host: https://www.newkenthandyman.com/
+
+# Sitemaps
+Sitemap: https://www.newkenthandyman.com/sitemap.xml
