@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "git clone https://github.com/maryann-doug-promo/shared.git && next lint && prisma generate --schema=./shared/prisma/schema.prisma && next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
