@@ -15,6 +15,9 @@ import personal_info from '@/personal_content/personal_info.json';
 export const metadata: Metadata = {
   title: content.metaData.title,
   description: content.metaData.description,
+  alternates: {
+    canonical: `${process.env.HTML_THIS_WEBSITE}/privacy-policy`
+  }
 };
 
 export default function ContactPage() {

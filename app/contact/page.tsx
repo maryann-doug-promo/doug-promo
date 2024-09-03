@@ -15,7 +15,10 @@ import styles from './page.module.scss';
 
 export const metadata: Metadata = {
   title: content.metaData.title,
-  description: content.metaData.description
+  description: content.metaData.description,
+  alternates: {
+    canonical: `${process.env.HTML_THIS_WEBSITE}/contact`
+  }
 };
 
 export default function ContactPage() {
