@@ -1,17 +1,35 @@
 {
   "redirects": [
     {
-      "source": "https://doug-promo.vercel.app/(.*)",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "doug-promo.vercel.app"
+        }
+      ],
       "destination": "https://www.newkenthandyman.com/$1",
       "permanent": true
     },
     {
-      "source": "https://doug-promo-git-main-mary-ann-dougs-projects.vercel.app/(.*)",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "doug-promo-git-main-mary-ann-dougs-projects.vercel.app"
+        }
+      ],
       "destination": "https://www.newkenthandyman.com/$1",
       "permanent": true
     },
     {
-      "source": "https://doug-promo-mary-ann-dougs-projects.vercel.app/(.*)",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "doug-promo-mary-ann-dougs-projects.vercel.app"
+        }
+      ],
       "destination": "https://www.newkenthandyman.com/$1",
       "permanent": true
     }
