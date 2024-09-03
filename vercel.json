@@ -2,6 +2,12 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "doug-promo.vercel.app"
+        }
+      ],
       "destination": "https://www.newkenthandyman.com/$1",
       "permanent": true
     }
