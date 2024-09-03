@@ -11,7 +11,7 @@ Disallow: /api
 Disallow: /.vercel
 
 # Host
-Host: https://www.newkenthandyman.com/
+Host: https://www.newkenthandyman.com
 
 # Sitemaps
 Sitemap: https://www.newkenthandyman.com/sitemap.xml
